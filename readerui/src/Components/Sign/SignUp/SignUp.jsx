@@ -1,8 +1,8 @@
-import React, { Component } from '../../../../node_modules/@types/react';
-import './node_modules/antd/dist/antd.css';
+import React, { Component } from 'react';
+import 'antd/dist/antd.css';
 import '../SignUp.css';
 
-import { Form, Icon, Input, Button, Checkbox } from '../../../../node_modules/antd/lib';
+import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
 class NormalSignUpForm extends Component {
   handleSubmit = e => {

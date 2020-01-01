@@ -1,9 +1,9 @@
-import React, { Component } from '../../../../../node_modules/@types/react';
-import './node_modules/antd/dist/antd.css';
+import React, { Component } from 'react';
+import 'antd/dist/antd.css';
 import './GiftList.css';
 
-import { Link, Route } from '../../../../../node_modules/react-router-dom';
-import { Row, Col, Typography, Card, Icon, Tabs, Radio, Button } from '../../../../../node_modules/antd/lib';
+import { Link, Route } from 'react-router-dom';
+import { Row, Col, Typography, Card, Icon, Tabs, Radio, Button } from 'antd';
 import gift01 from '../../../../Assets/gift01.png';
 import gift02 from '../../../../Assets/gift02.png';
 import card01 from '../../../../Assets/card01.png';

@@ -1,8 +1,8 @@
-import React from '../node_modules/@types/react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import { BrowserRouter, Route } from '../node_modules/react-router-dom'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import Navbar from './Components/Commons/Navbar/Navbar';
 

@@ -1,10 +1,10 @@
-import React, { Component } from '../../../../node_modules/@types/react';
-import './node_modules/antd/dist/antd.css';
+import React, { Component } from 'react';
+import 'antd/dist/antd.css';
 import '../SignUp.css';
 
-import { Redirect, withRouter } from '../../../../node_modules/react-router-dom';
-import { connect } from '../../../../node_modules/react-redux/lib';
-import { Form, Icon, Input, Button, Checkbox } from '../../../../node_modules/antd/lib';
+import { Redirect, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { login } from './LoginAction';
 
 class NormalLoginForm extends React.Component {

@@ -1,8 +1,8 @@
-import React, { Component } from '../../../../node_modules/@types/react';
+import React, { Component } from 'react';
 
-import './node_modules/antd/dist/antd.css';
+import 'antd/dist/antd.css';
 
-import { Layout, Menu, Breadcrumb, Icon } from '../../../../node_modules/antd/lib';
+import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 import GiftList from './GiftList/GiftList';
 
 const { SubMenu } = Menu;
