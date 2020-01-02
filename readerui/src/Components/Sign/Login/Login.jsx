@@ -8,7 +8,7 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd';
 import { login } from './LoginAction';
 
 class NormalLoginForm extends React.Component {
-  state;
+  
   constructor() {
     super();
     this.username = '';

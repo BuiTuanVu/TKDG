@@ -1,0 +1,11 @@
+.login-form {
+	max-width: 400px;
+	padding: 20px;
+	box-shadow: hsla(189, 14%, 26%, 0.35) 0px 1px 6px 0px;
+}
+.login-form-forgot {
+	float: right;
+}
+.form-button {
+	width: 100%;
+}
