@@ -9,17 +9,24 @@ import NavBarContainer from './Components/Common/Menu/NavBar/NavBarContainer';
 
 import DashBoard from './Components/Dashboard/DashBoard';
 import Login from './Components/Common/Login/Login';
-
+import CreatePost from './Components/Writer/CreatePost/CreatePost';
+import ListPost from './Components/Writer/ListPost/ListPost';
+import { connect } from 'react-redux';
 
 
 const { Content } = Layout;
+
 class App extends React.PureComponent {
   render() {
+    const { postsData } = this.props;
+    const dataPending = postsData.filter((item) => item.status === 0);
+    const dataAccepted = postsData.filter((item) => item.status === 1);
+    const dataRejected = postsData.filter((item) => item.status === -1);
     return (
       <BrowserRouter>
         <Route exact path="/" component={Login} />
-
-        <Route path="/admin/">
+        <Route exact path="/admin-login" component={Login} />
+        <Route path="/writer/">
           <Layout style={{ height: '100vh' }}>
             <SideBar />
             <Layout>
@@ -63,7 +70,10 @@ class App extends React.PureComponent {
                   }}
                 >
                   <Route path="/admin/" component={DashBoard} />
-
+                  <Route path="/writer/create-post" component={CreatePost} />
+                  <Route path="/writer/view-pending-post" ><ListPost data={dataPending} tit={'Danh sách bài viết chờ duyệt'} /></Route>
+                  <Route path="/writer/view-accepted-post" ><ListPost data={dataAccepted} tit={'Danh sách bài viết được duyệt'} /></Route>
+                  <Route path="/writer/view-rejected-post" ><ListPost data={dataRejected} tit={'Danh sách bài viết bị từ chối'} /></Route>
                 </Content>
               </Layout>
             </Layout>
@@ -74,4 +84,12 @@ class App extends React.PureComponent {
   }
 }
 
-export default App;
+
+const mapStateToProps = state => {
+  return {
+    postsData: state.PostReducer.postsData,
+  };
+};
+
+
+export default connect(mapStateToProps, null)(App);

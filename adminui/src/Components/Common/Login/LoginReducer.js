@@ -1,5 +1,5 @@
 import { LOGIN } from './LoginAction.js'
-import { combineReducers } from 'redux';
+
 const init = {
     username: '',
     isLogin: false
