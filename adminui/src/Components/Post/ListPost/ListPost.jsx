@@ -188,11 +188,15 @@ class ListPost extends Component {
 												color="volcano"
 											>
 												<Icon type="clock-circle" style={{ paddingTop: 4, marginRight: 5 }} />
-												<Countdown
-													style={{ fontSize: 12 }}
-													value={deadline(item.id)}
-													onFinish={(e) => this.onFinish(item.title)}
-												/>
+												{username === 'editor' ? (
+													<Countdown
+														style={{ fontSize: 12 }}
+														value={deadline(item.id)}
+														onFinish={(e) => this.onFinish(item.title)}
+													/>
+												) : (
+													<Countdown style={{ fontSize: 12 }} value={deadline(item.id)} />
+												)}
 											</Tag>
 											<div>
 												<Text style={{ fontSize: 18 }} strong>
