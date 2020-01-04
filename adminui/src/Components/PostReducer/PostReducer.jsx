@@ -25,55 +25,70 @@ const dataPost = {
 			writer: 'Minh Long',
 			content: (
 				<div>
-					<p class="selectionShareable">
-						Sau thời gian nghỉ đ&oacute;n Gi&aacute;ng sinh v&agrave; năm mới, CLB Heerenveen đ&atilde; trở
-						lại với buổi tập đầu ti&ecirc;n trong năm 2020. Ở buổi tập n&agrave;y, Đo&agrave;n Văn Hậu cũng
-						c&oacute; mặt c&ugrave;ng c&aacute;c đồng đội.&nbsp;
+					<p>
+						V&agrave;o 23h ng&agrave;y 3-1(giờ Việt Nam) fanpage của CLB Heerenveen đăng tải một loạt bức
+						ảnh với ch&uacute; th&iacute;ch rằng đ&oacute; l&agrave; buổi luyện tập đầu ti&ecirc;n của
+						c&aacute;c cầu thủ trong năm mới 2020 v&agrave; ng&agrave;y mai (tức 4-1) cả đội sẽ di chuyển
+						tới T&acirc;y Ban Nha nơi c&oacute; thời tiết ấm &aacute;p hơn.
 					</p>
-					<table class="contentimg">
-						<tbody>
-							<tr>
-								<td>
-									<a
-										class="swipebox"
-										href="https://images.vov.vn/w990/uploaded/3qqsrf8ivhily8uzveukg/2020_01_04/heee_rlgz.jpg"
-									>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
 										<img
-											class="cms-photo"
-											title="văn hậu đội mưa tập luyện trong ng&agrave;y heerenveen tập trung trở lại  h&igrave;nh 1"
-											src="https://images.vov.vn/w800/uploaded/3qqsrf8ivhily8uzveukg/2020_01_04/heee_rlgz.jpg"
-											alt="van hau doi mua tap luyen trong ngay heerenveen tap trung tro lai  hinh 1"
-											data-photo-original-src="https://images.vov.vn/uploaded/3qqsrf8ivhily8uzveukg/2020_01_04/heee_rlgz.jpg"
-											data-desc="Văn Hậu đội mưa tập luyện trong ng&agrave;y Heerenveen tập trung trở lại. (Ảnh: SX Heerenveen)."
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_0b6d8043-038e-426e-994e-0b3e2c20de7a.jpg"
+											alt=""
 										/>
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									Văn Hậu đội mưa tập luyện trong ng&agrave;y Heerenveen tập trung trở lại. (Ảnh: SX
-									Heerenveen).&nbsp;
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<p class="selectionShareable">
-						Trong buổi tập n&agrave;y, thầy tr&ograve; HLV Johnny Jansen đ&atilde; phải r&egrave;n
-						qu&acirc;n dưới thời tiết khắc nghiệt mưa to v&agrave; lạnh gi&aacute;. Văn Hậu c&ugrave;ng
-						c&aacute;c đồng đội đ&atilde; phải mặc &aacute;o mưa k&iacute;n cổ, quần d&agrave;i khi thực
-						hiện c&aacute;c b&agrave;i tập m&agrave; HLV giao.<br />
-						<br />Nh&igrave;n chung kh&ocirc;ng kh&iacute; buổi tập diễn ra rất nghi&ecirc;m t&uacute;c
-						v&agrave; Văn Hậu cũng đ&atilde; cố gắng ở mức cao nhất để ho&agrave;n th&agrave;nh gi&aacute;o
-						&aacute;n m&agrave; c&aacute;c HLV đề ra.&nbsp;<br />
-						<br />Trong ng&agrave;y h&ocirc;m nay (4/1), Heerenveen sẽ c&oacute; th&ecirc;m một buổi tập nữa
-						tại đại bản doanh trước khi di chuyển sang T&acirc;y Ban Nha tập huấn 1 tuần. Tại đ&acirc;y,
-						Heerenveen sẽ c&oacute; 1 trận giao hữu với CLB địa phương. Chuyến đi n&agrave;y sẽ c&oacute;
-						&yacute; nghĩa đặc biệt với Văn Hậu trong qu&aacute; tr&igrave;nh t&igrave;m kiếm 1 suất ra
-						s&acirc;n thường xuy&ecirc;n tại đội chủ s&acirc;n Abe Lenstra
+									</td>
+								</tr>
+								<tr>
+									<td class="note">Văn Hậu đội mưa luyện tập. Ảnh:&nbsp;Heerenveen</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Như thường lệ, c&aacute;c CĐV Việt Nam ngay lập tức v&agrave;o t&igrave;m kiếm bức ảnh c&oacute;
+						sự hiện diện của Văn Hậu. Sự quan t&acirc;m của người h&acirc;m mộ Việt Nam được thấy r&otilde;
+						qua số lượt y&ecirc;u th&iacute;ch v&agrave; b&igrave;nh luận vượt trội.&nbsp;
 					</p>
-					<div id="eJOY__extension_root" style="all: unset;">
-						&nbsp;
-					</div>
+					<p>
+						T&iacute;nh đến 11h s&aacute;ng 4-1, trong khi những bức ảnh kh&aacute;c chỉ nhận được khoảng
+						100 lượt th&iacute;ch th&igrave; con số n&agrave;y ở bức ảnh c&oacute; Văn Hậu l&ecirc;n tới
+						4.700 v&agrave; thu h&uacute;t tới 274 lượt b&igrave;nh luận.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_93510286-8f52-4805-8fb5-798447ad075e.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">
+										Bức ảnh c&oacute; mặt Văn Hậu nhận được&nbsp; sự ch&uacute; &yacute; cao từ CĐV
+										Việt Nam
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Hầu hết c&aacute;c b&igrave;nh luận đều tỏ ra cảm th&ocirc;ng với sự kh&oacute; khăn trong luyện
+						tập của cầu thủ người Việt Nam ở H&agrave; Lan, nhưng cũng c&oacute; kh&ocirc;ng &iacute;t
+						b&igrave;nh luận kh&aacute; l&agrave; ... "dị".&nbsp;
+					</p>
+					<p>
+						Đơn cử như một CĐV c&oacute; t&ecirc;n Nguyễn C&ocirc;ng Thanh khuy&ecirc;n Văn Hậu n&ecirc;n...
+						đi cắt t&oacute;c sau khi chứng kiến m&aacute;i đầu ướt đẫm của cầu thủ n&agrave;y trong buổi
+						tập. Một người kh&aacute;c th&igrave; nhận x&eacute;t rằng : "Trời mưa t&oacute;c d&agrave;i ướt
+						v&atilde;i cả ướt đẫm v&igrave; tập luyện hơn c&aacute;c cầu thủ kh&aacute;c".
+					</p>
 				</div>
 			)
 		},
@@ -104,7 +119,7 @@ const dataPost = {
 			title: 'Thầy Park gặp riêng hàng thủ sau trận thua Bahrain',
 			cate: 'Thể thao',
 			des: 'U23 thu được nhiều kết quả, nhưng HLV Park vẫn có những điều không hài lòng sau trận thua Bahrain ',
-			date: '03/01/2019 10:00 AM/',
+			date: '03/01/2019 10:00 AM',
 			status: 0,
 			writer: 'Vũ Long',
 			content: (

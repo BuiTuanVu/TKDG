@@ -17,6 +17,12 @@ class SideBarEditor extends React.Component {
 						Trang chủ
 					</Link>
 				</Menu.Item>
+				<Menu.Item key="2">
+					<Link style={{ fontSize: 15 }} to="/admin/create-post">
+						<Icon style={{ fontSize: 20 }} type="file-add" />
+						Tạo bài viết
+					</Link>
+				</Menu.Item>
 				<Menu.Item key="12">
 					<Link style={{ fontSize: 15 }} to="/admin/view-cate">
 						<Icon style={{ fontSize: 20 }} type="appstore" />
@@ -41,12 +47,7 @@ class SideBarEditor extends React.Component {
 						Xem bài viết đã duyệt
 					</Link>
 				</Menu.Item>
-				<Menu.Item key="2">
-					<Link style={{ fontSize: 15 }} to="/admin/create-post">
-						<Icon style={{ fontSize: 20 }} type="file-add" />
-						Tạo bài viết
-					</Link>
-				</Menu.Item>
+
 				<Menu.Item key="4">
 					<Link style={{ fontSize: 15 }} to="/admin/view-schedule">
 						<Icon style={{ fontSize: 20 }} type="carry-out" />
