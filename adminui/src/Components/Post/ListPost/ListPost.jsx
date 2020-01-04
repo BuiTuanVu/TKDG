@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
 import './ListPost.css';
 import 'antd/dist/antd.css';
-import { List, Card, Typography, Tag, Select, Button, Icon, Form, Input, Row, Col, Modal } from 'antd';
+import { List, Card, Typography, Tag, Select, Button, Icon, Form, Input, Row, Col, Modal, Statistic } from 'antd';
 
 import { connect } from 'react-redux';
 import TextArea from 'antd/lib/input/TextArea';
 import { Link } from 'react-router-dom';
+
+const { Countdown } = Statistic;
 const { Text, Title } = Typography;
 const { Meta } = Card;
 const { Option } = Select;
 
+const deadline = (id) => {
+	return Date.now() + 1000 * 10 * id;
+};
+
+function warning(id) {
+	Modal.warning({
+		title: 'Thông báo bài viết chờ duyệt',
+		content: `${id}`
+	});
+}
 class ListPost extends Component {
 	state = {
 		visibleAccept: false,
@@ -18,12 +30,17 @@ class ListPost extends Component {
 		visiblePreview: false,
 		id: 0
 	};
+
+	onFinish = (id) => {
+		warning(id);
+	};
 	onChange = (value) => {
 		value === 'special' ? this.setState({ isOutStd: true }) : this.setState({ isOutStd: false });
 	};
 	showModalPreview = (id) => {
 		this.setState({
-			visiblePreview: true, id:id
+			visiblePreview: true,
+			id: id
 		});
 	};
 	handleCancelPreview = () => {
@@ -34,13 +51,15 @@ class ListPost extends Component {
 
 	showModalAccept = (id) => {
 		this.setState({
-			visibleAccept: true, id:id
+			visibleAccept: true,
+			id: id
 		});
 	};
 
 	showModalReject = (id) => {
 		this.setState({
-			visibleReject: true, id: id
+			visibleReject: true,
+			id: id
 		});
 	};
 	handleOkAccept = (e) => {
@@ -68,12 +87,11 @@ class ListPost extends Component {
 		});
 	};
 	render() {
-	
 		const { data, tit, username, status } = this.props;
-	
+
 		const { isOutStd, id } = this.state;
-		const recentItem = (data.filter((item) => item.id === this.state.id))[0];
-		console.log('dqwdqwdqd',recentItem);
+		const recentItem = data.filter((item) => item.id === this.state.id)[0];
+		console.log('dqwdqwdqd', recentItem);
 		return (
 			<div>
 				{' '}
@@ -131,43 +149,55 @@ class ListPost extends Component {
 						</div>
 					</div>
 					<List
-						grid={{ gutter: 30, column: 4 }}
+						pagination={{ pageSize: 8 }}
+						grid={{ gutter: [ 40, 20 ], column: 4 }}
 						dataSource={data}
 						renderItem={(item) => (
 							<div>
 								<List.Item>
 									{status === 0 ? (
 										//Card for editor
-										<Card onClick={(e) => this.showModalPreview(item.id)}
-											
+										<Card
+											onClick={(e) => this.showModalPreview(item.id)}
 											style={{
 												position: 'relative',
 												display: 'flex',
 												flexDirection: 'column',
-												minHeight: 440,
+												minHeight: 380,
 												boxShadow: 'hsla(189, 14%, 30%, 0.35) 0px 1px 6px 0px'
 											}}
 											hoverable
 											cover={
 												<img
-													style={{ width: '100%', height: 'auto', minHeight: 180 }}
+													style={{ width: '100%', height: 180, minHeight: 180 }}
 													alt={item.title}
 													src={item.img}
 												/>
 											}
 										>
 											{' '}
-											<Tag style={{ position: 'absolute', top: 5, right: 0 }} color="geekblue">
-												<Icon type="user" style={{ marginRight: 5 }} />
-												{item.writer}
+											<Tag
+												style={{
+													position: 'absolute',
+													top: 5,
+													right: 0,
+													display: 'flex',
+													flexDirection: 'row',
+													alignContent: 'center'
+												}}
+												color="volcano"
+											>
+												<Icon type="clock-circle" style={{ paddingTop: 4, marginRight: 5 }} />
+												<Countdown
+													style={{ fontSize: 12 }}
+													value={deadline(item.id)}
+													onFinish={(e) => this.onFinish(item.title)}
+												/>
 											</Tag>
 											<div>
 												<Text style={{ fontSize: 18 }} strong>
 													{item.title}
 												</Text>
-											</div>
-											<div style={{ fontSize: 15, marginTop: 5 }}>
-												<Text>{item.des}</Text>
 											</div>
 											<div style={{ marginTop: 10 }}>
 												<Text>
@@ -217,11 +247,8 @@ class ListPost extends Component {
 														justifyContent: 'space-between'
 													}}
 												>
-													<Button icon="close" type="danger" onClick={(e) => this.showModalReject(item.id)}>
-														Từ chối
-													</Button>
-													<Button icon="check" type="primary" onClick={(e) => this.showModalAccept(item.id)}>
-														Duyệt bài
+													<Button icon="eye" type="primary" ghost style={{ width: '100%' }}>
+														Duyệt bài viết
 													</Button>
 												</div>
 											)}
@@ -380,9 +407,7 @@ class ListPost extends Component {
 												cols={2}
 												autoFocus
 												placeholder="Nhập lời nhận xét về bài viết"
-												value={
-													'Bài viết tiêu đề sai, chưa phản ánh đúng nội dung bài viết'
-												}
+												value={'Bài viết tiêu đề sai, chưa phản ánh đúng nội dung bài viết'}
 											/>
 										</Form.Item>
 									</Form>
@@ -396,9 +421,15 @@ class ListPost extends Component {
 								>
 									<Title level={4}>{id === 0 ? '' : recentItem.title}</Title>
 									<p style={{ fontSize: '14px' }}>
-										Viết bởi <span style={{ fontWeight: 'bold' }}>{id === 0 ? '' : recentItem.writer}</span> |{' '}
-										<span style={{ color: 'peru', fontWeight: 500 }}>{id === 0 ? '' : recentItem.cate}</span> |{' '}
-										{id === 0 ? '' : recentItem.date}
+										Viết bởi{' '}
+										<span style={{ fontWeight: 'bold' }}>
+											{id === 0 ? '' : recentItem.writer}
+										</span>{' '}
+										|{' '}
+										<span style={{ color: 'peru', fontWeight: 500 }}>
+											{id === 0 ? '' : recentItem.cate}
+										</span>{' '}
+										| {id === 0 ? '' : recentItem.date}
 									</p>
 									<p>{item.des}</p>
 									<div style={{ width: 'auto' }}>{id === 0 ? '' : recentItem.content}</div>
@@ -432,10 +463,20 @@ class ListPost extends Component {
 											justifyContent: 'flex-end'
 										}}
 									>
-										<Button icon="close" type="danger" style={{ marginRight: 20 }}>
-											Từ chối bài
+										<Button
+											icon="close"
+											type="danger"
+											style={{ marginRight: 20 }}
+											onClick={(e) => this.showModalReject(item.id)}
+										>
+											Từ chối
 										</Button>
-										<Button icon="check" type="primary" style={{ marginRight: 20 }}>
+										<Button
+											icon="check"
+											style={{ marginRight: 20 }}
+											type="primary"
+											onClick={(e) => this.showModalAccept(item.id)}
+										>
 											Duyệt bài
 										</Button>
 									</div>

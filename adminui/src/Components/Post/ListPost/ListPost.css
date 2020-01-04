@@ -7,3 +7,10 @@
 .ant-form-item label {
 	font-weight: 600;
 }
+.ant-statistic-content-value {
+	font-size: 13px;
+	color: red;
+}
+.ant-statistic-content {
+	font-size: small;
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 import './Schedule.css';
 
-import { Calendar, Alert, Badge, List, Typography, Modal } from 'antd';
+import { Calendar, Alert, Badge, List, Typography, Modal, Button } from 'antd';
 import moment from 'moment';
 
 function info(data, date) {
@@ -112,7 +112,17 @@ class Schedule extends React.Component {
 
 		return (
 			<div>
-				<Alert message={`Bạn đã chọn ngày: ${selectedValue && selectedValue.format('DD-MM-YY')}`} />
+				<div
+					style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', paddingRight: 20 }}
+				>
+					<Alert
+						style={{ width: '50%' }}
+						message={`Bạn đã chọn ngày: ${selectedValue && selectedValue.format('DD-MM-YY')}`}
+					/>
+					<Button icon="plus" type="primary">
+						Thêm lịch làm việc
+					</Button>
+				</div>
 
 				<Calendar
 					value={value}

@@ -26,32 +26,32 @@ class SideBarEditor extends React.Component {
 				<Menu.Item key="12">
 					<Link style={{ fontSize: 15 }} to="/admin/view-cate">
 						<Icon style={{ fontSize: 20 }} type="appstore" />
-						Xem chuyên mục phụ trách
+						Chuyên mục phụ trách
 					</Link>
 				</Menu.Item>
 				<Menu.Item key="3">
 					<Link style={{ fontSize: 15 }} to="/admin/view-pending-post">
 						<Icon style={{ fontSize: 20 }} type="file-sync" />
-						Xem bài viết chờ duyệt
-					</Link>
-				</Menu.Item>
-				<Menu.Item key="8">
-					<Link style={{ fontSize: 15 }} to="/admin/view-rejected-post">
-						<Icon style={{ fontSize: 20 }} type="exception" />
-						Xem bài viết bị từ chối
+						Bài viết chờ duyệt
 					</Link>
 				</Menu.Item>
 				<Menu.Item key="9">
 					<Link style={{ fontSize: 15 }} to="/admin/view-accepted-post">
 						<Icon style={{ fontSize: 20 }} type="file-done" />
-						Xem bài viết đã duyệt
+						Bài viết đã duyệt
+					</Link>
+				</Menu.Item>
+				<Menu.Item key="8">
+					<Link style={{ fontSize: 15 }} to="/admin/view-rejected-post">
+						<Icon style={{ fontSize: 20 }} type="exception" />
+						Bài viết bị từ chối
 					</Link>
 				</Menu.Item>
 
 				<Menu.Item key="4">
 					<Link style={{ fontSize: 15 }} to="/admin/view-schedule">
 						<Icon style={{ fontSize: 20 }} type="carry-out" />
-						Xem lịch làm việc
+						Lịch làm việc
 					</Link>
 				</Menu.Item>
 				<Menu.Item key="5">

@@ -19,9 +19,12 @@ import CateEditor from './Components/Cate_Editor/CateEditor';
 const { Content } = Layout;
 
 class App extends React.PureComponent {
+
   render() {
     const { postsData } = this.props;
-    const dataPending = postsData.filter((item) => item.status === 0);
+    const dataPending = postsData.filter((item) => item.status === 0).sort(function (a, b) {
+      return b.id - a.id;
+    });;
     const dataAccepted = postsData.filter((item) => item.status === 1);
     const dataRejected = postsData.filter((item) => item.status === -1);
     return (
@@ -36,31 +39,32 @@ class App extends React.PureComponent {
               <Layout style={{ padding: '0 24px 24px' }}>
                 <Breadcrumb style={{ margin: '16px 0' }}>
                   <Breadcrumb.Item>Dashboard</Breadcrumb.Item>
-                  <Route path="/admin/view-list-user">
-                    <Breadcrumb.Item>Quản lý tài khoản</Breadcrumb.Item>
-                    <Breadcrumb.Item>Xem danh sách người dùng</Breadcrumb.Item>
+                  <Route path="/admin/view-pending-post">
+
+                    <Breadcrumb.Item>Danh sách bài viết chờ duyệt</Breadcrumb.Item>
                   </Route>
-                  <Route path="/admin/detailUser">
-                    <Breadcrumb.Item>Quản lý tài khoản</Breadcrumb.Item>
-                    <Breadcrumb.Item>Xem chi tiết người dùng</Breadcrumb.Item>
+                  <Route path="/admin/view-accepted-post">
+                    <Breadcrumb.Item>Danh sách bài viết đã đăng</Breadcrumb.Item>
+
                   </Route>
 
-                  <Route path="/admin/skills">
-                    <Breadcrumb.Item>Quản lý kĩ năng</Breadcrumb.Item>
-                    <Breadcrumb.Item>Xem danh sách kĩ năng</Breadcrumb.Item>
+                  <Route path="/admin/view-rejected-post">
+                    <Breadcrumb.Item></Breadcrumb.Item>
+                    <Breadcrumb.Item>Danh sách bài viết bị từ chối</Breadcrumb.Item>
                   </Route>
 
-                  <Route path="/admin/contract">
-                    <Breadcrumb.Item>Quản lý hợp đồng</Breadcrumb.Item>
-                    <Breadcrumb.Item>Xem danh sách hợp đồng</Breadcrumb.Item>
+                  <Route path="/admin/view-schedule">
+
+                    <Breadcrumb.Item>Lịch làm liệc</Breadcrumb.Item>
                   </Route>
-                  <Route path="/admin/detailContract">
-                    <Breadcrumb.Item>Quản lý hợp đồng</Breadcrumb.Item>
-                    <Breadcrumb.Item>Xem chi tiết hợp đồng</Breadcrumb.Item>
+
+                  <Route path="/admin/view-cate">
+
+                    <Breadcrumb.Item>Danh sách chuyên mục phụ trách</Breadcrumb.Item>
                   </Route>
-                  <Route path="/admin/complaint">
-                    <Breadcrumb.Item>Quản lý hợp đồng</Breadcrumb.Item>
-                    <Breadcrumb.Item>Danh sách khiếu nại</Breadcrumb.Item>
+                  <Route path="/admin/create-post">
+
+                    <Breadcrumb.Item>Tạo mới bài viết</Breadcrumb.Item>
                   </Route>
                 </Breadcrumb>
                 <Content
