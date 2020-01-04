@@ -32,17 +32,12 @@ class NormalLoginForm extends React.Component {
 			return <Redirect to="/admin/" />;
 		}
 		return (
-			<div
-				style={{
-					display: 'flex',
-					flexDirection: 'row',
-					justifyContent: 'center',
-					marginTop: 50
-				}}
-			>
+			<div className="bg-admin-login">
 				<Form onSubmit={this.handleSubmit} className="login-form">
-					<h2 style={{ textAlign: 'center', marginBottom: 20 }}>Đăng nhập trang Admin</h2>
-					<Form.Item>
+					<h1 style={{ textAlign: 'center', marginBottom: 30, color: 'white', marginTop: '-50px' }}>
+						ĐĂNG NHẬP ADMIN
+					</h1>
+					<Form.Item style={{ marginBottom: 30 }}>
 						{getFieldDecorator('username', {
 							rules: [ { required: true, message: 'Please input your username!' } ]
 						})(
@@ -78,13 +73,12 @@ class NormalLoginForm extends React.Component {
 						{getFieldDecorator('remember', {
 							valuePropName: 'checked',
 							initialValue: true
-						})(<Checkbox>Nhớ tài khoản</Checkbox>)}
-						<a className="login-form-forgot" href="">
+						})(<Checkbox style={{ color: 'white' }}>Nhớ tài khoản</Checkbox>)}
+						<a className="login-form-forgot" href="" style={{ color: 'white' }}>
 							Quên mật khẩu
 						</a>
 						<Button
 							size="large"
-							type="primary"
 							htmlType="submit"
 							className="form-button"
 							onClick={(event) => {
