@@ -9,9 +9,11 @@ import NavBarContainer from './Components/Common/Menu/NavBar/NavBarContainer';
 
 import DashBoard from './Components/Dashboard/DashBoard';
 import Login from './Components/Common/Login/Login';
-import CreatePost from './Components/Writer/CreatePost/CreatePost';
-import ListPost from './Components/Writer/ListPost/ListPost';
+import CreatePost from './Components/Post/CreatePost/CreatePost';
+import ListPost from './Components/Post/ListPost/ListPost';
 import { connect } from 'react-redux';
+import Schedule from './Components/Schedule/Schedule';
+import CateEditor from './Components/Cate_Editor/CateEditor';
 
 
 const { Content } = Layout;
@@ -26,7 +28,7 @@ class App extends React.PureComponent {
       <BrowserRouter>
         <Route exact path="/" component={Login} />
         <Route exact path="/admin-login" component={Login} />
-        <Route path="/writer/">
+        <Route path="/admin/">
           <Layout style={{ height: '100vh' }}>
             <SideBar />
             <Layout>
@@ -69,11 +71,13 @@ class App extends React.PureComponent {
                     minHeight: 'auto'
                   }}
                 >
-                  <Route path="/admin/" component={DashBoard} />
-                  <Route path="/writer/create-post" component={CreatePost} />
-                  <Route path="/writer/view-pending-post" ><ListPost data={dataPending} tit={'Danh sách bài viết chờ duyệt'} /></Route>
-                  <Route path="/writer/view-accepted-post" ><ListPost data={dataAccepted} tit={'Danh sách bài viết được duyệt'} /></Route>
-                  <Route path="/writer/view-rejected-post" ><ListPost data={dataRejected} tit={'Danh sách bài viết bị từ chối'} /></Route>
+                  <Route exact path="/admin/" component={DashBoard} />
+                  <Route path="/admin/create-post" component={CreatePost} />
+                  <Route path="/admin/view-pending-post" ><ListPost status={0} data={dataPending} tit={'Danh sách bài viết chờ duyệt'} /></Route>
+                  <Route path="/admin/view-accepted-post" ><ListPost status={1} data={dataAccepted} tit={'Danh sách bài viết được duyệt'} /></Route>
+                  <Route path="/admin/view-rejected-post" ><ListPost status={-1} data={dataRejected} tit={'Danh sách bài viết bị từ chối'} /></Route>
+                  <Route path="/admin/view-schedule" component={Schedule} />
+                  <Route path="/admin/view-cate" component={CateEditor} />
                 </Content>
               </Layout>
             </Layout>

@@ -1,7 +1,7 @@
 import { LOGIN } from './LoginAction.js'
 
 const init = {
-    username: '',
+    username: 'editor',
     isLogin: false
 }
 
