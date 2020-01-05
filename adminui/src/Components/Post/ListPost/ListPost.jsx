@@ -5,7 +5,7 @@ import { List, Card, Typography, Tag, Select, Button, Icon, Form, Input, Row, Co
 
 import { connect } from 'react-redux';
 import TextArea from 'antd/lib/input/TextArea';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 const { Countdown } = Statistic;
 const { Text, Title } = Typography;
@@ -204,9 +204,7 @@ class ListPost extends Component {
 												</Text>
 											</div>
 											<div>
-												<Text style={{ fontSize: 14 }}>
-													{item.des}
-												</Text>
+												<Text style={{ fontSize: 14 }}>{item.des}</Text>
 											</div>
 											<div style={{ marginTop: 10 }}>
 												<Text>
@@ -263,7 +261,7 @@ class ListPost extends Component {
 											)}
 										</Card>
 									) : (
-										//Post # pending 
+										//Post # pending
 										<Card
 											style={{
 												display: 'flex',
@@ -300,8 +298,9 @@ class ListPost extends Component {
 												) : (
 													<Tag color="#108ee9">Đang chờ</Tag>
 												)}
-												</div>
-												{status === -1 && username === 'writer' ? <div
+											</div>
+											{status === -1 && username === 'writer' ? (
+												<div
 													style={{
 														position: 'absolute',
 														bottom: 10,
@@ -315,7 +314,10 @@ class ListPost extends Component {
 													<Button icon="eye" type="primary" ghost style={{ width: '100%' }}>
 														Duyệt bài viết
 													</Button>
-												</div> : <div></div>}
+												</div>
+											) : (
+												<div />
+											)}
 										</Card>
 									)}
 								</List.Item>
@@ -323,7 +325,11 @@ class ListPost extends Component {
 									style={{ top: 20 }}
 									title="Đăng bài viết"
 									visible={this.state.visibleAccept}
-									onOk={this.handleOkAccept}
+									onOk={(e) =>
+										this.setState({
+											visibleAccept: false,
+											visiblePreview: false
+										})}
 									onCancel={this.handleCancelAccept}
 									okText="Đăng bài"
 									cancelText="Hủy"
@@ -401,7 +407,12 @@ class ListPost extends Component {
 									style={{ top: 20 }}
 									title="Từ chối bài viết"
 									visible={this.state.visibleReject}
-									onOk={this.handleOkReject}
+									onOk={(e) => {
+										this.setState({
+											visibleReject: false,
+											visiblePreview: false
+										});
+									}}
 									onCancel={this.handleCancelReject}
 									okText="Gửi nhận xét"
 									cancelText="Hủy"
@@ -456,7 +467,9 @@ class ListPost extends Component {
 										| {id === 0 ? '' : recentItem.date}
 									</p>
 									<p>{id === 0 ? '' : recentItem.des}</p>
-									<div style={{ width: 'auto' }}>{id === 0 ? <div>Nội dung chưa có</div> : recentItem.content}</div>
+									<div style={{ width: 'auto' }}>
+										{id === 0 ? <div>Nội dung chưa có</div> : recentItem.content}
+									</div>
 									<div style={{ marginTop: 20, paddingBottom: 30 }}>
 										<span>
 											<Icon type="tags" />&ensp;Từ khóa:&ensp;
