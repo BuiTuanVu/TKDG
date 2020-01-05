@@ -14,7 +14,75 @@ const dataPost = {
 			status: 0,
 			vip: 0,
 			view: 40,
-			writer: 'Minh Long'
+			writer: 'Minh Long',
+			content: (
+				<div>
+					<p>
+						V&agrave;o 23h ng&agrave;y 3-1(giờ Việt Nam) fanpage của CLB Heerenveen đăng tải một loạt bức
+						ảnh với ch&uacute; th&iacute;ch rằng đ&oacute; l&agrave; buổi luyện tập đầu ti&ecirc;n của
+						c&aacute;c cầu thủ trong năm mới 2020 v&agrave; ng&agrave;y mai (tức 4-1) cả đội sẽ di chuyển
+						tới T&acirc;y Ban Nha nơi c&oacute; thời tiết ấm &aacute;p hơn.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_0b6d8043-038e-426e-994e-0b3e2c20de7a.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">Văn Hậu đội mưa luyện tập. Ảnh:&nbsp;Heerenveen</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Như thường lệ, c&aacute;c CĐV Việt Nam ngay lập tức v&agrave;o t&igrave;m kiếm bức ảnh c&oacute;
+						sự hiện diện của Văn Hậu. Sự quan t&acirc;m của người h&acirc;m mộ Việt Nam được thấy r&otilde;
+						qua số lượt y&ecirc;u th&iacute;ch v&agrave; b&igrave;nh luận vượt trội.&nbsp;
+					</p>
+					<p>
+						T&iacute;nh đến 11h s&aacute;ng 4-1, trong khi những bức ảnh kh&aacute;c chỉ nhận được khoảng
+						100 lượt th&iacute;ch th&igrave; con số n&agrave;y ở bức ảnh c&oacute; Văn Hậu l&ecirc;n tới
+						4.700 v&agrave; thu h&uacute;t tới 274 lượt b&igrave;nh luận.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_93510286-8f52-4805-8fb5-798447ad075e.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">
+										Bức ảnh c&oacute; mặt Văn Hậu nhận được&nbsp; sự ch&uacute; &yacute; cao từ CĐV
+										Việt Nam
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Hầu hết c&aacute;c b&igrave;nh luận đều tỏ ra cảm th&ocirc;ng với sự kh&oacute; khăn trong luyện
+						tập của cầu thủ người Việt Nam ở H&agrave; Lan, nhưng cũng c&oacute; kh&ocirc;ng &iacute;t
+						b&igrave;nh luận kh&aacute; l&agrave; ... "dị".&nbsp;
+					</p>
+					<p>
+						Đơn cử như một CĐV c&oacute; t&ecirc;n Nguyễn C&ocirc;ng Thanh khuy&ecirc;n Văn Hậu n&ecirc;n...
+						đi cắt t&oacute;c sau khi chứng kiến m&aacute;i đầu ướt đẫm của cầu thủ n&agrave;y trong buổi
+						tập. Một người kh&aacute;c th&igrave; nhận x&eacute;t rằng : "Trời mưa t&oacute;c d&agrave;i ướt
+						v&atilde;i cả ướt đẫm v&igrave; tập luyện hơn c&aacute;c cầu thủ kh&aacute;c".
+					</p>
+				</div>
+			)
 		},
 		{
 			id: 2,
@@ -107,7 +175,75 @@ const dataPost = {
 			status: 0,
 			vip: 0,
 			view: 420,
-			writer: 'Bá Long'
+			writer: 'Bá Long',
+			content: (
+				<div>
+					<p>
+						V&agrave;o 23h ng&agrave;y 3-1(giờ Việt Nam) fanpage của CLB Heerenveen đăng tải một loạt bức
+						ảnh với ch&uacute; th&iacute;ch rằng đ&oacute; l&agrave; buổi luyện tập đầu ti&ecirc;n của
+						c&aacute;c cầu thủ trong năm mới 2020 v&agrave; ng&agrave;y mai (tức 4-1) cả đội sẽ di chuyển
+						tới T&acirc;y Ban Nha nơi c&oacute; thời tiết ấm &aacute;p hơn.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_0b6d8043-038e-426e-994e-0b3e2c20de7a.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">Văn Hậu đội mưa luyện tập. Ảnh:&nbsp;Heerenveen</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Như thường lệ, c&aacute;c CĐV Việt Nam ngay lập tức v&agrave;o t&igrave;m kiếm bức ảnh c&oacute;
+						sự hiện diện của Văn Hậu. Sự quan t&acirc;m của người h&acirc;m mộ Việt Nam được thấy r&otilde;
+						qua số lượt y&ecirc;u th&iacute;ch v&agrave; b&igrave;nh luận vượt trội.&nbsp;
+					</p>
+					<p>
+						T&iacute;nh đến 11h s&aacute;ng 4-1, trong khi những bức ảnh kh&aacute;c chỉ nhận được khoảng
+						100 lượt th&iacute;ch th&igrave; con số n&agrave;y ở bức ảnh c&oacute; Văn Hậu l&ecirc;n tới
+						4.700 v&agrave; thu h&uacute;t tới 274 lượt b&igrave;nh luận.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_93510286-8f52-4805-8fb5-798447ad075e.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">
+										Bức ảnh c&oacute; mặt Văn Hậu nhận được&nbsp; sự ch&uacute; &yacute; cao từ CĐV
+										Việt Nam
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Hầu hết c&aacute;c b&igrave;nh luận đều tỏ ra cảm th&ocirc;ng với sự kh&oacute; khăn trong luyện
+						tập của cầu thủ người Việt Nam ở H&agrave; Lan, nhưng cũng c&oacute; kh&ocirc;ng &iacute;t
+						b&igrave;nh luận kh&aacute; l&agrave; ... "dị".&nbsp;
+					</p>
+					<p>
+						Đơn cử như một CĐV c&oacute; t&ecirc;n Nguyễn C&ocirc;ng Thanh khuy&ecirc;n Văn Hậu n&ecirc;n...
+						đi cắt t&oacute;c sau khi chứng kiến m&aacute;i đầu ướt đẫm của cầu thủ n&agrave;y trong buổi
+						tập. Một người kh&aacute;c th&igrave; nhận x&eacute;t rằng : "Trời mưa t&oacute;c d&agrave;i ướt
+						v&atilde;i cả ướt đẫm v&igrave; tập luyện hơn c&aacute;c cầu thủ kh&aacute;c".
+					</p>
+				</div>
+			)
 		},
 		{
 			id: 4,
@@ -119,7 +255,75 @@ const dataPost = {
 			status: 0,
 			vip: 0,
 			view: 500,
-			writer: 'Vũ Long'
+			writer: 'Vũ Long',
+			content: (
+				<div>
+					<p>
+						V&agrave;o 23h ng&agrave;y 3-1(giờ Việt Nam) fanpage của CLB Heerenveen đăng tải một loạt bức
+						ảnh với ch&uacute; th&iacute;ch rằng đ&oacute; l&agrave; buổi luyện tập đầu ti&ecirc;n của
+						c&aacute;c cầu thủ trong năm mới 2020 v&agrave; ng&agrave;y mai (tức 4-1) cả đội sẽ di chuyển
+						tới T&acirc;y Ban Nha nơi c&oacute; thời tiết ấm &aacute;p hơn.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_0b6d8043-038e-426e-994e-0b3e2c20de7a.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">Văn Hậu đội mưa luyện tập. Ảnh:&nbsp;Heerenveen</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Như thường lệ, c&aacute;c CĐV Việt Nam ngay lập tức v&agrave;o t&igrave;m kiếm bức ảnh c&oacute;
+						sự hiện diện của Văn Hậu. Sự quan t&acirc;m của người h&acirc;m mộ Việt Nam được thấy r&otilde;
+						qua số lượt y&ecirc;u th&iacute;ch v&agrave; b&igrave;nh luận vượt trội.&nbsp;
+					</p>
+					<p>
+						T&iacute;nh đến 11h s&aacute;ng 4-1, trong khi những bức ảnh kh&aacute;c chỉ nhận được khoảng
+						100 lượt th&iacute;ch th&igrave; con số n&agrave;y ở bức ảnh c&oacute; Văn Hậu l&ecirc;n tới
+						4.700 v&agrave; thu h&uacute;t tới 274 lượt b&igrave;nh luận.
+					</p>
+					<center>
+						<table class="contentimg">
+							<tbody>
+								<tr>
+									<td class="img">
+										<img
+											src="http://static.cand.com.vn/Files/Image/nguyenbinh/2020/01/04/thumb_660_93510286-8f52-4805-8fb5-798447ad075e.jpg"
+											alt=""
+										/>
+									</td>
+								</tr>
+								<tr>
+									<td class="note">
+										Bức ảnh c&oacute; mặt Văn Hậu nhận được&nbsp; sự ch&uacute; &yacute; cao từ CĐV
+										Việt Nam
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</center>
+					<p>
+						Hầu hết c&aacute;c b&igrave;nh luận đều tỏ ra cảm th&ocirc;ng với sự kh&oacute; khăn trong luyện
+						tập của cầu thủ người Việt Nam ở H&agrave; Lan, nhưng cũng c&oacute; kh&ocirc;ng &iacute;t
+						b&igrave;nh luận kh&aacute; l&agrave; ... "dị".&nbsp;
+					</p>
+					<p>
+						Đơn cử như một CĐV c&oacute; t&ecirc;n Nguyễn C&ocirc;ng Thanh khuy&ecirc;n Văn Hậu n&ecirc;n...
+						đi cắt t&oacute;c sau khi chứng kiến m&aacute;i đầu ướt đẫm của cầu thủ n&agrave;y trong buổi
+						tập. Một người kh&aacute;c th&igrave; nhận x&eacute;t rằng : "Trời mưa t&oacute;c d&agrave;i ướt
+						v&atilde;i cả ướt đẫm v&igrave; tập luyện hơn c&aacute;c cầu thủ kh&aacute;c".
+					</p>
+				</div>
+			)
 		},
 		{
 			id: 5,
@@ -316,9 +520,6 @@ const dataPost = {
 						dạn kinh nghiệm để ng&agrave;y c&agrave;ng xứng đ&aacute;ng với vai tr&ograve; v&agrave; sứ mệnh
 						l&atilde;nh đạo c&aacute;ch mạng, xứng đ&aacute;ng với sự tin cậy của nh&acirc;n d&acirc;n.
 					</p>
-					<div id="eJOY__extension_root" style="all: unset;">
-						&nbsp;
-					</div>
 				</div>
 			)
 		},
@@ -379,9 +580,6 @@ const dataPost = {
 						B&ecirc;n cạnh đ&oacute;, nghị định mới cũng đề cập việc người c&oacute; h&agrave;nh vi
 						d&ugrave;ng điện thoại di động khi điều khiển xe m&aacute;y sẽ bị phạt tiền từ 1-2 triệu đồng.
 					</p>
-					<div id="eJOY__extension_root" style="all: unset;">
-						&nbsp;
-					</div>
 				</div>
 			)
 		},
@@ -394,7 +592,7 @@ const dataPost = {
 				'Sau 2 năm ngừng hợp tác, Apple đang xem xét lại quyết định tiếp tục hợp tác với hãng từng cung cấp chip đồ họa Imagination.',
 			date: '03/01/2019 19:00 AM',
 			status: 0,
-			vip: 1,
+			vip: 0,
 			view: 5000,
 			writer: 'Vũ Long',
 			content: (
@@ -461,56 +659,729 @@ const dataPost = {
 				'Một người phụ nữ ở bang Iowa, Mỹ gần đây đã may mắn tìm lại được chiếc xe nhờ vào Find My - tính năng giúp tìm iPhone, iPad, MacBook.',
 			date: '04/01/2019 10:00 AM',
 			status: 0,
-			vip: 1,
+			vip: 0,
 			view: 1002,
 			writer: 'Minh Long',
-			content: (<div><p>O&rsquo;Conner đ&atilde; để qu&ecirc;n chiếc iPhone tr&ecirc;n&nbsp;xe hơi c&aacute; nh&acirc;n khi đang mua đồ tại một cửa h&agrave;ng tiện lợi địa phương. V&igrave; mải tập trung v&agrave;o việc mua sắm m&agrave; c&ocirc; c&ograve;n qu&ecirc;n r&uacute;t cả chiếc ch&igrave;a kh&oacute;a tr&ecirc;n xe. Kh&ocirc;ng kh&oacute; hiểu khi sau đ&oacute;, chiếc xe c&ugrave;ng với iPhone v&agrave; tư trang c&aacute; nh&acirc;n của O&rsquo;Conner đ&atilde; ho&agrave;n to&agrave;n biến mất.</p>
-				<table class="picture" align="center">
-				<tbody>
-				<tr>
-				<td class="pic"><img src="https://znews-photo.zadn.vn/w660/Uploaded/ivpbciv2/2019_12_20/xU44EPgXTdaC7AVLRXGD3D.jpg" alt="Tim duoc chiec xe bi an cap nho iPhone hinh anh 1 xU44EPgXTdaC7AVLRXGD3D.jpg" /></td>
-				</tr>
-				<tr>
-				<td class="pCaption caption">Find My - t&iacute;nh năng gi&uacute;p t&igrave;m iPhone, iPad, MacBook khi bị thất lạc.&nbsp;c&oacute; thể hoạt động m&agrave; kh&ocirc;ng cần tới Internet. Ảnh:&nbsp;Tom's Guide.</td>
-				</tr>
-				</tbody>
-				</table>
-				<p>Mọi chuyện c&agrave;ng tồi tệ hơn v&igrave; mới chỉ c&aacute;ch đ&acirc;y khoảng 3 th&aacute;ng, căn hộ của O&rsquo;Conner đ&atilde; ho&agrave;n to&agrave;n bị thi&ecirc;u rụi. Vụ việc đ&atilde; khiến O&rsquo;Conner bất đắc dĩ phải sinh hoạt v&agrave; ăn ngủ tr&ecirc;n chiếc xe của m&igrave;nh trong v&agrave;i tuần gần đ&acirc;y.</p>
-				<p>May mắn thay, nhờ v&agrave;o t&iacute;nh năng t&igrave;m kiếm vị tr&iacute; của chiếc iPhone vẫn đang bật, ch&iacute;nh quyền địa phương đ&atilde; t&igrave;m được chiếc xe của O&rsquo;Conner tại một khu chung cư. Tuy nhi&ecirc;n, c&ocirc; vẫn chưa lấy lại được iPhone, v&iacute; v&agrave; c&aacute;c vật dụng tư trang kh&aacute;c.</p>
-				<div id="eJOY__extension_root" style="all: unset;">&nbsp;</div></div>)
+			content: (
+				<div>
+					<p>
+						O&rsquo;Conner đ&atilde; để qu&ecirc;n chiếc iPhone tr&ecirc;n&nbsp;xe hơi c&aacute; nh&acirc;n
+						khi đang mua đồ tại một cửa h&agrave;ng tiện lợi địa phương. V&igrave; mải tập trung v&agrave;o
+						việc mua sắm m&agrave; c&ocirc; c&ograve;n qu&ecirc;n r&uacute;t cả chiếc ch&igrave;a
+						kh&oacute;a tr&ecirc;n xe. Kh&ocirc;ng kh&oacute; hiểu khi sau đ&oacute;, chiếc xe c&ugrave;ng
+						với iPhone v&agrave; tư trang c&aacute; nh&acirc;n của O&rsquo;Conner đ&atilde; ho&agrave;n
+						to&agrave;n biến mất.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/ivpbciv2/2019_12_20/xU44EPgXTdaC7AVLRXGD3D.jpg"
+										alt="Tim duoc chiec xe bi an cap nho iPhone hinh anh 1 xU44EPgXTdaC7AVLRXGD3D.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									Find My - t&iacute;nh năng gi&uacute;p t&igrave;m iPhone, iPad, MacBook khi bị thất
+									lạc.&nbsp;c&oacute; thể hoạt động m&agrave; kh&ocirc;ng cần tới Internet.
+									Ảnh:&nbsp;Tom's Guide.
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Mọi chuyện c&agrave;ng tồi tệ hơn v&igrave; mới chỉ c&aacute;ch đ&acirc;y khoảng 3 th&aacute;ng,
+						căn hộ của O&rsquo;Conner đ&atilde; ho&agrave;n to&agrave;n bị thi&ecirc;u rụi. Vụ việc
+						đ&atilde; khiến O&rsquo;Conner bất đắc dĩ phải sinh hoạt v&agrave; ăn ngủ tr&ecirc;n chiếc xe
+						của m&igrave;nh trong v&agrave;i tuần gần đ&acirc;y.
+					</p>
+					<p>
+						May mắn thay, nhờ v&agrave;o t&iacute;nh năng t&igrave;m kiếm vị tr&iacute; của chiếc iPhone vẫn
+						đang bật, ch&iacute;nh quyền địa phương đ&atilde; t&igrave;m được chiếc xe của O&rsquo;Conner
+						tại một khu chung cư. Tuy nhi&ecirc;n, c&ocirc; vẫn chưa lấy lại được iPhone, v&iacute;
+						v&agrave; c&aacute;c vật dụng tư trang kh&aacute;c.
+					</p>
+				</div>
+			)
 		},
 
 		{
 			id: 11,
-			img:
-				'https://znews-photo.zadn.vn/w480/Uploaded/neg_wpeczyr/2019_12_20/maxresdefault.jpg',
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/neg_wpeczyr/2019_12_20/maxresdefault.jpg',
 			title: 'Mua Apple Watch nào rẻ nhất dùng được eSIM tại Việt Nam?',
 			cate: 'Công nghệ',
-			des:
-				'Những mẫu Apple Watch Series 3 (bản GPS + Cellular) trở lên mới có thể dùng được eSIM tại Việt Nam.',
+			des: 'Những mẫu Apple Watch Series 3 (bản GPS + Cellular) trở lên mới có thể dùng được eSIM tại Việt Nam.',
 			date: '04/01/2019 14:00 AM',
 			status: 0,
-			vip: 1,
+			vip: 0,
 			view: 1060,
 			writer: 'Minh Long',
-			content: (<div><p>Ng&agrave;y 13/12, Viettel ra mắt dịch vụ eSIM tr&ecirc;n đồng hồ th&ocirc;ng minh Apple&nbsp;Watch, cho ph&eacute;p thiết bị c&oacute; thể kết nối mạng di động tại Việt Nam.</p>
-				<p>Như vậy người d&ugrave;ng c&oacute; thể kết nối trực tiếp với mạng viễn th&ocirc;ng từ&nbsp;thiết bị m&agrave; kh&ocirc;ng cần qua Bluetooth tr&ecirc;n&nbsp;<a class="topic company autolink" title="Tin tức iPhone" href="https://news.zing.vn/tieu-diem/iphone.html">iPhone</a>&nbsp;như trước. Điều đ&oacute; đồng nghĩa với việc bạn c&oacute; thể nhận được c&aacute;c cuộc gọi, sử dụng bản đồ ngay tr&ecirc;n&nbsp;<a class="topic company autolink" title="Tin tức Apple" href="https://news.zing.vn/tieu-diem/cong-ty-apple.html">Apple</a>&nbsp;Watch m&agrave; kh&ocirc;ng cần đến iPhone.</p>
-				<p>Để c&oacute; thể sử dụng được eSIM, thiết bị của người d&ugrave;ng cần đảm bảo một số điều kiện như Apple Watch Series 3 hoặc hơn (bản GPS + Cellular), chạy tr&ecirc;n nền tảng watchOS phi&ecirc;n bản 6.1.1 trở l&ecirc;n. Apple Watch phải hỗ trợ một trong số c&aacute;c băng tần mạng 900 MHz, 1.800 MHz, 2.100 MHz, 2.600 MHz.</p>
-				<table class="picture" align="center">
-				<tbody>
-				<tr>
-				<td class="pic"><img src="https://znews-photo.zadn.vn/w660/Uploaded/neg_wpeczyr/2019_12_20/The-Top-5-Apple-Watch-Apps-at-Work-1024x538.jpg" alt="Mua Apple Watch nao re nhat dung duoc eSIM tai Viet Nam? hinh anh 1 The-Top-5-Apple-Watch-Apps-at-Work-1024x538.jpg" /></td>
-				</tr>
-				<tr>
-				<td class="pCaption caption">
-				<p>Viettel đ&atilde; hỗ trợ eSIM tr&ecirc;n Apple Watch. Ảnh:<em>&nbsp;Digital Trends</em>.</p>
-				</td>
-				</tr>
-				</tbody>
-				</table>
-				<p>Hiện tại, nếu bạn&nbsp;muốn mua Apple Watch d&ugrave;ng được t&iacute;nh năng eSIM c&oacute; thể tham khảo một số lựa chọn sau đ&acirc;y. Đầu ti&ecirc;n, với những sản phẩm ch&iacute;nh h&atilde;ng, Apple Watch Series 3 LTE đang được ch&agrave;o b&aacute;n với gi&aacute; từ 8,5 triệu đồng, Apple Watch Series 4 LTE gi&aacute; từ 9,9 triệu đồng v&agrave; Apple Watch Series 5 LTE 14 triệu đồng.</p>
-				<p>Apple Watch d&ugrave;ng được eSIM tại Việt Nam l&agrave; phi&ecirc;n bản quốc tế. Tuy nhi&ecirc;n, nh&agrave; mạng Viettel kh&ocirc;ng hỗ trợ c&aacute;c model x&aacute;ch tay từ Mỹ, Canada. Thế n&ecirc;n người d&ugrave;ng c&oacute; thể chọn mua những sản phẩm x&aacute;ch tay từ Singapore, Nhật Bản, Hong Kong.</p>
-				<div id="eJOY__extension_root" style="all: unset;">&nbsp;</div></div>)
+			content: (
+				<div>
+					<p>
+						Ng&agrave;y 13/12, Viettel ra mắt dịch vụ eSIM tr&ecirc;n đồng hồ th&ocirc;ng minh
+						Apple&nbsp;Watch, cho ph&eacute;p thiết bị c&oacute; thể kết nối mạng di động tại Việt Nam.
+					</p>
+					<p>
+						Như vậy người d&ugrave;ng c&oacute; thể kết nối trực tiếp với mạng viễn th&ocirc;ng
+						từ&nbsp;thiết bị m&agrave; kh&ocirc;ng cần qua Bluetooth tr&ecirc;n&nbsp;<a
+							class="topic company autolink"
+							title="Tin tức iPhone"
+							href="https://news.zing.vn/tieu-diem/iphone.html"
+						>
+							iPhone
+						</a>&nbsp;như trước. Điều đ&oacute; đồng nghĩa với việc bạn c&oacute; thể nhận được c&aacute;c
+						cuộc gọi, sử dụng bản đồ ngay tr&ecirc;n&nbsp;<a
+							class="topic company autolink"
+							title="Tin tức Apple"
+							href="https://news.zing.vn/tieu-diem/cong-ty-apple.html"
+						>
+							Apple
+						</a>&nbsp;Watch m&agrave; kh&ocirc;ng cần đến iPhone.
+					</p>
+					<p>
+						Để c&oacute; thể sử dụng được eSIM, thiết bị của người d&ugrave;ng cần đảm bảo một số điều kiện
+						như Apple Watch Series 3 hoặc hơn (bản GPS + Cellular), chạy tr&ecirc;n nền tảng watchOS
+						phi&ecirc;n bản 6.1.1 trở l&ecirc;n. Apple Watch phải hỗ trợ một trong số c&aacute;c băng tần
+						mạng 900 MHz, 1.800 MHz, 2.100 MHz, 2.600 MHz.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/neg_wpeczyr/2019_12_20/The-Top-5-Apple-Watch-Apps-at-Work-1024x538.jpg"
+										alt="Mua Apple Watch nao re nhat dung duoc eSIM tai Viet Nam? hinh anh 1 The-Top-5-Apple-Watch-Apps-at-Work-1024x538.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Viettel đ&atilde; hỗ trợ eSIM tr&ecirc;n Apple Watch. Ảnh:<em>&nbsp;Digital Trends</em>.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Hiện tại, nếu bạn&nbsp;muốn mua Apple Watch d&ugrave;ng được t&iacute;nh năng eSIM c&oacute; thể
+						tham khảo một số lựa chọn sau đ&acirc;y. Đầu ti&ecirc;n, với những sản phẩm ch&iacute;nh
+						h&atilde;ng, Apple Watch Series 3 LTE đang được ch&agrave;o b&aacute;n với gi&aacute; từ 8,5
+						triệu đồng, Apple Watch Series 4 LTE gi&aacute; từ 9,9 triệu đồng v&agrave; Apple Watch Series 5
+						LTE 14 triệu đồng.
+					</p>
+					<p>
+						Apple Watch d&ugrave;ng được eSIM tại Việt Nam l&agrave; phi&ecirc;n bản quốc tế. Tuy
+						nhi&ecirc;n, nh&agrave; mạng Viettel kh&ocirc;ng hỗ trợ c&aacute;c model x&aacute;ch tay từ Mỹ,
+						Canada. Thế n&ecirc;n người d&ugrave;ng c&oacute; thể chọn mua những sản phẩm x&aacute;ch tay từ
+						Singapore, Nhật Bản, Hong Kong.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 12,
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/pgi_qvradhnat/2020_01_05/ny.jpg',
+			title: 'Gọi điện nhờ trợ giúp khi bị phạt 35 triệu đồng vì lỗi nồng độ cồn',
+			cate: 'Thời sự',
+			des:
+				'Tài xế T. không chịu ký vào biên bản xử lý với lý do "sức khỏe không tốt". Đồng thời, tài xế này còn gọi điện nhờ người trợ giúp.',
+			date: '05/01/2019 10:00',
+			status: 0,
+			vip: 0,
+			view: 5860,
+			writer: 'Minh Long',
+			content: (
+				<div>
+					<p>
+						Đội CSGT - Trật tự đ&ocirc; thị, C&ocirc;ng an TP Huế (Thừa Thi&ecirc;n - Huế) cho biết tối 4/1
+						đơn vị đ&atilde; xử phạt một trường hợp t&agrave;i xế &ocirc;t&ocirc; vi phạm vượt mức cao nhất
+						trong khung xử phạt về nồng độ cồn theo quy định mới tại Nghị định 100/2019.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/pgi_qvradhnat/2020_01_05/bt.jpg"
+										alt="Goi dien nho tro giup khi bi phat 35 trieu dong vi loi nong do con hinh anh 1 bt.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										T&agrave;i xế bị xử phạt nồng độ cồn. Ảnh:&nbsp;<em>L.C.</em>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Theo đ&oacute;, khoảng 19h30 c&ugrave;ng ng&agrave;y, t&agrave;i xế l&agrave; T.T.B.T (29 tuổi,
+						tr&uacute; ở TP Đ&ocirc;ng H&agrave; (Quảng Trị) điều khiển &ocirc;t&ocirc; lưu th&ocirc;ng
+						tr&ecirc;n đường Đống Đa (TP Huế). L&uacute;c n&agrave;y, lực lượng CSGT ph&aacute;t hiện
+						t&agrave;i xế c&oacute; nghi vấn n&ecirc;n y&ecirc;u cầu dừng xe kiểm tra.
+					</p>
+					<p>
+						Thời điểm kiểm tra, t&agrave;i xế T. c&oacute; nồng độ cồn l&ecirc;n tới 0,661mg/l&iacute;t
+						kh&iacute; thở, vượt mức cao nhất trong khung xử phạt về vi phạm nồng độ cồn.
+					</p>
+					<p>
+						Theo quy định của Nghị định 100/2019, CSGT đ&atilde; lập bi&ecirc;n bản để xử phạt h&agrave;nh
+						vi vi phạm của t&agrave;i xế T. với số tiền 35 triệu đồng. Đồng thời, t&agrave;i xế n&agrave;y
+						c&ograve;n bị tước quyền sử dụng giấy ph&eacute;p l&aacute;i xe 23 th&aacute;ng.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 13,
+			img:
+				'https://znews-photo.zadn.vn/w480/Uploaded/lce_mdlwc/2020_01_05/82022432_672026653605810_2048651283673382912_n.jpg',
+			title: '34 nam nữ phê ma túy trong quán karaoke Victory',
+			cate: 'Thời sự',
+			des:
+				'Cảnh sát kiểm tra quán karaoke Victory ở huyện Thăng Bình (Quảng Nam) và phát hiện hàng chục nam nữ đang phê ma túy.',
+			date: '05/01/2019 14:00',
+			status: 0,
+			vip: 0,
+			view: 1060,
+			writer: 'Minh Long',
+			content: (
+				<div>
+					<p>
+						Rạng s&aacute;ng 5/1, C&ocirc;ng an huyện Thăng B&igrave;nh (<a
+							class="topic location autolink quickview"
+							href="https://news.zing.vn/tieu-diem/quang-nam.html"
+						>
+							Quảng Nam
+						</a>) kiểm tra h&agrave;nh ch&iacute;nh qu&aacute;n karaoke Victory (x&atilde; B&igrave;nh Minh,
+						huyện Thăng B&igrave;nh).
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/lce_mdlwc/2020_01_05/matuytb.jpg"
+										alt="34 nam nu phe ma tuy trong quan karaoke Victory hinh anh 1 matuytb.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Tại 6 ph&ograve;ng h&aacute;t ở karaoke Victory, cảnh s&aacute;t ph&aacute;t
+										hiện 34 nam nữ dương t&iacute;nh ma t&uacute;y. Ảnh:&nbsp;<em>C&ocirc;ng an cung cấp.</em>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Khi cảnh s&aacute;t kiểm tra, 6 ph&ograve;ng h&aacute;t c&oacute; 34 nam nữ đang nhảy
+						m&uacute;a. Kiểm tra nhanh, c&ocirc;ng an ph&aacute;t hiện to&agrave;n bộ kh&aacute;ch dương
+						t&iacute;nh với ma t&uacute;y, trong đ&oacute; c&oacute; 6 nữ, 28 nam.
+					</p>
+					<p>
+						Tại c&aacute;c ph&ograve;ng h&aacute;t, cảnh s&aacute;t thu giữ nhiều dụng cụ sử dụng ma
+						t&uacute;y. C&ocirc;ng an huyện Thăng B&igrave;nh đ&atilde; lập bi&ecirc;n bản vi phạm
+						h&agrave;nh ch&iacute;nh đối với chủ qu&aacute;n karaoke Victory.
+					</p>
+					<p>
+						Vụ việc đang được C&ocirc;ng an huyện Thăng B&igrave;nh tiếp tục điều tra, l&agrave;m r&otilde;.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 14,
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/pgi_qvradhnat/2020_01_05/ghb.jpg',
+			title: 'Thiền sư Thích Nhất Hạnh về Huế tịnh dưỡng sau hơn 1 tháng ở Thái Lan',
+			cate: 'Thời sự',
+			des:
+				'Từ Thái Lan trở về Huế tịnh dưỡng, sức khỏe của Thiền sư Thích Nhất Hạnh khá tốt. Theo ý nguyện của thiền sư, ông muốn sống tại chùa Từ Hiếu.',
+			date: '05/01/2019 16:00',
+			status: 0,
+			vip: 0,
+			view: 1056,
+			writer: 'Vũ Long',
+			content: (
+				<div>
+					<p>
+						Sau hơn 1 th&aacute;ng ở L&agrave;ng Mai (Th&aacute;i Lan), thiền sư&nbsp;<a
+							class="topic person autolink quickview"
+							href="https://news.zing.vn/tieu-diem/thich-nhat-hanh.html"
+						>
+							Th&iacute;ch Nhất Hạnh
+						</a>&nbsp;đ&atilde; quay trở về ch&ugrave;a Từ Hiếu v&agrave;o ng&agrave;y 4/1 (TP Huế, Thừa
+						Thi&ecirc;n - Huế) để tịnh dưỡng. Đ&acirc;y l&agrave; ng&ocirc;i ch&ugrave;a m&agrave; thiền sư
+						tu tập từ năm 16 tuổi.
+					</p>
+					<p>
+						Biết tin thiền sư trở về Huế, h&agrave;ng chục tăng ni phật tử đ&atilde; đến s&acirc;n bay
+						Ph&uacute; B&agrave;i để nghinh đ&oacute;n.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/pgi_qvradhnat/2020_01_05/hy.jpg"
+										alt="Thien su Thich Nhat Hanh ve Hue tinh duong sau hon 1 thang o Thai Lan hinh anh 1 hy.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Thiền sư Th&iacute;ch Nhất Hạnh. Ảnh:&nbsp;<em>V.T.</em>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Tại ch&ugrave;a Từ Hiếu, thiền sư Th&iacute;ch Nhất Hạnh sẽ tịnh dưỡng ở thất Lắng Nghe.
+						Đ&acirc;y l&agrave; nơi m&agrave; thiền sư tịnh dưỡng hơn 1 năm qua.
+					</p>
+					<p>
+						Thiền sư Th&iacute;ch Nhất Hạnh từ Th&aacute;i Lan về ch&ugrave;a Từ Hiếu (Thừa Thi&ecirc;n -
+						Huế) từ cuối th&aacute;ng 10/2018. Theo &yacute; nguyện của thiền sư, &ocirc;ng muốn sống tại
+						ch&ugrave;a Từ Hiếu cho đến ng&agrave;y vi&ecirc;n tịch.
+					</p>
+					<p>
+						Thiền sư Th&iacute;ch Nhất Hạnh sinh năm 1926 tại Thừa Thi&ecirc;n - Huế, l&agrave; nh&agrave;
+						sư, nh&agrave; văn, nh&agrave; thơ, nh&agrave; hoạt động x&atilde; hội nổi tiếng của Phật
+						gi&aacute;o.
+					</p>
+					<p>
+						Ng&agrave;y 1/5/1966 tại ch&ugrave;a Từ Hiếu, thiền sư Ch&acirc;n Thật trao ấn khả cho
+						Th&iacute;ch Nhất Hạnh để từ đ&acirc;y ng&agrave;i trở th&agrave;nh một thiền sư (thầy dạy về
+						thiền).
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 15,
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/pgi_qvradhnat/2020_01_05/ghb.jpg',
+			title: 'Báo Indonesia: Văn Hậu sẽ gặp nhiều khó khăn ở châu Âu',
+			cate: 'Thể thao',
+			des:
+				'Truyền thông Indonesia khẳng định những hậu vệ cánh Đông Nam Á sẽ gặp nhiều khó khăn để có vị trí chính thức ở các đội bóng châu Âu.',
+			date: '05/01/2019 16:30',
+			status: 0,
+			vip: 1,
+			view: 6056,
+			writer:'Vũ Lương',
+			content: (
+				<div>
+					<p>
+						<em>Indosport</em>&nbsp;đăng b&agrave;i viết c&oacute; ti&ecirc;u đề "Hậu vệ tr&aacute;i của
+						Đ&ocirc;ng Nam &Aacute; chưa bao giờ th&agrave;nh c&ocirc;ng tại ch&acirc;u &Acirc;u".
+					</p>
+					<p>
+						B&agrave;i b&aacute;o dẫn lại quan điểm của truyền th&ocirc;ng H&agrave; Lan n&oacute;i rằng ưu
+						ti&ecirc;n h&agrave;ng đầu cho vị tr&iacute; hậu vệ tr&aacute;i ở Heerenveen l&agrave; Sherel
+						Floranus v&agrave; Lucas Woudenberg. Trong đ&oacute;, khả năng cạnh tranh cho vị tr&iacute;
+						ch&iacute;nh thức của&nbsp;<a
+							class="topic person autolink quickview"
+							href="https://news.zing.vn/tieu-diem/doan-van-hau.html"
+						>
+							Đo&agrave;n Văn Hậu
+						</a>&nbsp;tại Heerenveen l&agrave; rất kh&oacute; khăn.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/mdf_drokxr/2020_01_05/van_hau.jpg"
+										alt="Bao Indonesia: 'Van Hau se gap nhieu kho khan o chau Au' hinh anh 1 van_hau.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Văn Hậu c&oacute; lần ra s&acirc;n cho đội một của Heerenveen. Ảnh:&nbsp;<em>Orange Pictures</em>.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						<em>Indosport&nbsp;</em>viết: "Văn Hậu c&oacute; thể trở lại CLB H&agrave; Nội v&agrave;o cuối
+						m&ugrave;a giải, bởi cậu ấy chỉ tới H&agrave; Lan theo dạng cho mượn. Nếu nhanh ch&oacute;ng
+						th&iacute;ch nghi ở nửa sau của m&ugrave;a giải, Văn Hậu c&oacute; thể sẽ được Heerenveen mua
+						đứt. Nếu nh&igrave;n v&agrave;o những g&igrave; c&aacute;c nh&agrave; b&aacute;o v&agrave; HLV
+						H&agrave; Lan đ&aacute;nh gi&aacute;, r&otilde; r&agrave;ng cậu ấy gặp kh&oacute; khăn trong
+						việc gi&agrave;nh vị tr&iacute; ch&iacute;nh thức. Văn Hậu gặp nhiều kh&oacute; khăn ở
+						ch&acirc;u &Acirc;u".
+					</p>
+					<p>
+						Trước Văn Hậu, Firza Andika, hậu vệ tr&aacute;i người Indonesia, cũng từng chuyển đến ch&acirc;u
+						&Acirc;u thi đấu cho AFC Tubize ở Bỉ. Firza gia nhập AFC Tubize v&agrave;o th&aacute;ng 1/2019,
+						nhưng kh&ocirc;ng thể cạnh tranh cho một vị tr&iacute; ch&iacute;nh thức. Cầu thủ n&agrave;y
+						phải trở về qu&ecirc; hương thi đấu cho PSM Makassar v&agrave;o th&aacute;ng 8/2019 theo dạng
+						cho mượn.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 16,
+			img: 'https://znews-photo.zadn.vn/w1024/Uploaded/mdf_usoddd/2019_12_31/bia.jpg',
+			title: 'Tuyển UAE từng dự World Cup như thế nào?',
+			cate: 'Thể thao',
+			des:
+				'Hành trình đến World Cup 1990 của UAE có thể xem như câu chuyện cổ tích trong bóng đá và là niềm cảm hứng cho những đội bóng nhỏ.',
+			date: '05/01/2019 17:30',
+			status: 0,
+			vip: 1,
+			view: 3056,
+			writer:'Vũ Lương',
+			content: (
+				<div>
+					<p>
+						Tại chiến dịch v&ograve;ng loại, UAE được dẫn dắt bởi HLV Zagallo. &Ocirc;ng từng 2 lần
+						c&ugrave;ng đội tuyển Brazil v&ocirc; địch World Cup tr&ecirc;n tư c&aacute;ch cầu thủ v&agrave;
+						một lần dẫn dắt đội b&oacute;ng xứ Samba l&ecirc;n ng&ocirc;i tại đấu trường n&agrave;y. Với
+						kinh nghiệm của m&igrave;nh, &ocirc;ng nhanh ch&oacute;ng gi&uacute;p UAE, được tập hợp bởi
+						nhiều cầu thủ nghiệp dư, vượt qua v&ograve;ng loại đầu ti&ecirc;n với những đối thủ l&agrave;
+						Kuwait v&agrave; Pakistan.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w1024/Uploaded/mdf_usoddd/2019_12_31/UAE_1990.jpeg"
+										alt="Tuyen UAE tung du World Cup nhu the nao? hinh anh 1 UAE_1990.jpeg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption default-caption">
+									<p>
+										Với nhiều cầu thủ nghiệp dư trong đội h&igrave;nh, UAE c&oacute; lần đầu dự
+										World Cup.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						UAE tiến v&agrave;o v&ograve;ng loại cuối c&ugrave;ng, nơi họ c&ugrave;ng 5 đội đầu bảng
+						kh&aacute;c tranh 2 tấm v&eacute; tới World Cup. Lần n&agrave;y, đối thủ của UAE l&agrave; những
+						đội b&oacute;ng h&agrave;ng đầu ch&acirc;u lục gồm H&agrave;n Quốc, Trung Quốc, Saudi Arabia,
+						CHDCND Triều Ti&ecirc;n v&agrave; Qatar. Với đội b&oacute;ng c&oacute; nhiều cầu thủ nghiệp dư,
+						tới được World Cup gần như l&agrave; c&acirc;u chuyện cổ t&iacute;ch với họ.
+					</p>
+					<p>
+						V&ograve;ng loại n&oacute;i tr&ecirc;n được tổ chức ở nước trung lập với thể thức v&ograve;ng
+						tr&ograve;n một lượt v&agrave; 2 điểm được t&iacute;nh cho một trận thắng. Trận ra qu&acirc;n,
+						UAE h&ograve;a CHDCND Triều Ti&ecirc;n 0-0. Trận kế tiếp gặp &ocirc;ng lớn Trung Quốc, UAE sớm
+						bị dẫn trước sau pha lập c&ocirc;ng của Tang Yaodong. Khi thất bại đến rất gần với UAE, họ
+						t&igrave;m được b&agrave;n gỡ ph&uacute;t 87 với b&agrave;n thắng của Khaleel Mubarak.
+						V&agrave;i ph&uacute;t sau, Al Talyani h&oacute;a người h&ugrave;ng với b&agrave;n thắng quyết
+						định mang về chiến thắng cho UAE.
+					</p>
+					<p>
+						Hai trận h&ograve;a tiếp theo của UAE với Saudi Arabia v&agrave; Qatar đưa UAE v&agrave;o
+						t&igrave;nh thế thuận lợi khi chỉ trận h&ograve;a trước H&agrave;n Quốc ở lượt đấu cuối cũng đủ
+						để gi&uacute;p họ đi tiếp. Tuy nhi&ecirc;n, H&agrave;n Quốc l&agrave; đội b&oacute;ng c&oacute;
+						đẳng cấp kh&aacute;c biệt ho&agrave;n to&agrave;n với những đội c&ograve;n lại. Họ đ&atilde; sớm
+						c&oacute; v&eacute; tới World Cup sau 3 trận thắng, một trận h&ograve;a, ghi 4 b&agrave;n
+						v&agrave; chưa để thủng lưới. C&oacute; điểm trước H&agrave;n Quốc c&oacute; vẻ l&agrave; nhiệm
+						vụ qu&aacute; sức với UAE.
+					</p>
+					<p>
+						UAE nhanh ch&oacute;ng bị cường địch dẫn trước ở ph&uacute;t thứ 8 sau pha lập c&ocirc;ng của
+						Kwan Hwang-bo. Sau khi để dẫn b&agrave;n, UAE đ&atilde; thể hiện tinh thần chiến đấu ngoan cường
+						v&agrave; c&oacute; b&agrave;n gỡ ph&uacute;t 16, do c&ocirc;ng của Al Talyani. Những
+						ph&uacute;t sau đ&oacute;, UAE chơi ngoan cường để bảo vệ kết quả n&agrave;y, để rồi kh&eacute;p
+						lại trận đấu với tỷ số h&ograve;a 1-1.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w1024/Uploaded/mdf_usoddd/2019_12_31/lor_18_8289678.jpg"
+										alt="Tuyen UAE tung du World Cup nhu the nao? hinh anh 2 lor_18_8289678.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption default-caption">
+									<p>
+										Được đ&aacute;nh gi&aacute; thấp, nhưng UAE vẫn vượt qua v&ograve;ng loại World
+										Cup 1990 đầy cảm x&uacute;c.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			)
+		},
+		{
+			id: 17,
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2020_01_05/w.jpg',
+			title: 'MU, Wolves phải đá lại vòng 3 FA Cup',
+			cate: 'Thể thao',
+			des:
+				'MU chơi bế tắc và chấp nhận kết quả hòa 0-0 trước chủ nhà Wolves ở vòng 3 FA Cup diễn ra rạng sáng 5/1 (giờ Hà Nội).',
+			date: '05/01/2019 18:30',
+			status: 0,
+			vip: 0,
+			view: 3059,
+			writer:'Vũ Bùi',
+			content: (
+				<div>
+					<p>
+						Trước đối thủ nổi tiếng l&agrave; "s&aacute;t thủ của c&aacute;c &ocirc;ng lớn", Man Utd buộc
+						phải nhập cuộc thận trọng. Như thường lệ, Wolverhampton triển khai lối đ&aacute; ph&ograve;ng
+						ngự số đ&ocirc;ng ở s&acirc;n nh&agrave; để chờ cơ hội phản c&ocirc;ng.
+					</p>
+					<p>
+						Cơ hội sớm đến với chủ nh&agrave; ở ph&uacute;t thứ 13 v&agrave; nếu kh&ocirc;ng c&oacute; sự
+						xuất sắc của Sergio Romero, MU đ&atilde; phải nhận b&agrave;n thua.
+					</p>
+					<p>
+						Với h&agrave;ng c&ocirc;ng gồm to&agrave;n cầu thủ trẻ, thể h&igrave;nh "mỏng cơm" như Mason
+						Greenwood, Daniel James v&agrave; Tahith Chong, Man Utd kh&ocirc;ng thể tạo ra sự kh&aacute;c
+						biệt trước số đ&ocirc;ng cầu thủ Wolves &aacute;n ngữ trước khung th&agrave;nh.
+					</p>
+					<p>
+						"Quỷ đỏ" dồn b&oacute;ng ra hai bi&ecirc;n, thực hiện những c&uacute; s&uacute;t xa nhưng đều
+						kh&ocirc;ng mang lại hiệu quả. Hiệp đấu đầu ti&ecirc;n tr&ocirc;i qua m&agrave; kh&ocirc;ng
+						c&oacute; b&agrave;n thắng n&agrave;o được ghi.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/natmzz/2020_01_05/2020_01_04T180643Z_1822942473_RC269E9V075Z_RTRMADP_3_SOCCER_ENGLAND_WLV_MUN_REPORT.JPG"
+										alt="MU, Wolves phai da lai vong 3 FA Cup hinh anh 1 2020_01_04T180643Z_1822942473_RC269E9V075Z_RTRMADP_3_SOCCER_ENGLAND_WLV_MUN_REPORT.JPG"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>2 đội thi đấu ngang ngửa tại Molineux.</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Thế trận kh&ocirc;ng c&oacute; nhiều thay đổi trong hiệp hai. Wolves vẫn ph&ograve;ng ngự chủ
+						động v&agrave; nhiều lần uy hiếp khung th&agrave;nh của MU bằng những t&igrave;nh huống phản
+						c&ocirc;ng hay đột ph&aacute; c&aacute; nh&acirc;n.
+					</p>
+					<p>
+						Ph&uacute;t 70, HLV&nbsp;<a
+							class="topic person autolink quickview"
+							href="https://news.zing.vn/tieu-diem/solskjaer.html"
+						>
+							Solskjaer
+						</a>&nbsp;tung Rashford v&agrave;o s&acirc;n. Ch&acirc;n s&uacute;t số 10 su&yacute;t
+						ch&uacute;t nữa đ&atilde; c&oacute; thể ghi b&agrave;n mở tỷ số. Tuy nhi&ecirc;n c&uacute;
+						s&uacute;t của anh lại đưa b&oacute;ng đi dội x&agrave;.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 18,
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/natmzz/2019_12_31/13_thumb.jpg',
+			title: 'Đội hình hay nhất thập kỷ qua gây tranh cãi',
+			cate: 'Thể thao',
+			des: 'Đội hình hay nhất thập niên thứ 2 của thế kỷ 21 do tạp chí France Football bình chọn.',
+			date: '05/01/2019 20:00',
+			status: 0,
+			vip: 1,
+			view: 6000,
+			writer:'Vũ Lương',
+			content: (
+				<div>
+					<header class="the-article-header">
+						<p class="the-article-category">
+							Van Dijk mới chỉ tỏa s&aacute;ng trong hơn 2 m&ugrave;a giải gần đ&acirc;y nhưng vẫn
+							g&oacute;p mặt đội h&igrave;nh hay nhất thập ni&ecirc;n thứ 2 của thế kỷ 21 do tạp
+							ch&iacute; France Football b&igrave;nh chọn.
+						</p>
+					</header>
+					<section class="main">
+						<div class="the-article-body">
+							<table class="picture nocaption" align="center">
+								<tbody>
+									<tr>
+										<td class="pic">
+											<img
+												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/12_squad.jpg"
+												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 1 12_squad.jpg"
+												style={{width: '100%'}}
+											/>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="picture" align="center">
+								<tbody>
+									<tr>
+										<td class="pic">
+											<img style={{width: '100%'}}
+												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/01_casillas_zing.jpg"
+												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 2 01_casillas_zing.jpg"
+												
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td class="pCaption caption">
+											Sau th&agrave;nh c&ocirc;ng vang dội c&ugrave;ng Real, "Th&aacute;nh Iker"
+											chia tay s&acirc;n Bernabeu để đến với Porto.&nbsp;Casillas được ph&aacute;t
+											hiện mắc bệnh tim nhưng anh vẫn chưa chịu giải nghệ.&nbsp;Anh vẫn ki&ecirc;n
+											tr&igrave; tập luyện với hy vọng c&oacute; thể trở lại s&acirc;n cỏ trong
+											thời gian sớm nhất.
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="picture" align="center">
+								<tbody>
+									<tr>
+										<td class="pic">
+											<img
+												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/02_lahm_zing.jpg"
+												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 3 02_lahm_zing.jpg"
+												style={{width: '100%'}}
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td class="pCaption caption">
+											Người đội trưởng mẫu mực gi&uacute;p&nbsp;<a
+												class="topic company autolink"
+												title="Tin tức Bayern Munich"
+												href="https://news.zing.vn/tieu-diem/bayern-munich.html"
+											>
+												Bayern Munich
+											</a>&nbsp;chinh phục h&agrave;ng loạt danh hiệu lớn, đưa tuyển Đức l&ecirc;n
+											đỉnh thế giới đ&atilde; giải nghệ v&agrave;o năm 2017 khiến người h&acirc;m
+											mộ kh&ocirc;ng khỏi tiếc nuối.
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="picture" align="center">
+								<tbody>
+									<tr>
+										<td class="pic">
+											<img
+												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/03_van_dijk_zing.jpg"
+												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 4 03_van_dijk_zing.jpg"
+												style={{width: '100%'}}
+											/>
+										</td>
+									</tr>
+									<tr>
+										<td class="pCaption caption">
+											Chỉ cần gần 2 năm kho&aacute;c &aacute;o Liverpool, Van Dijk đ&atilde; vươn
+											m&igrave;nh từ một cầu thủ tiềm năng th&agrave;nh đối thủ th&aacute;ch thức
+											danh hiệu Quả b&oacute;ng V&agrave;ng với Ronaldo, Messi. M&agrave;n
+											tr&igrave;nh diễn trong 2 năm vừa qua tại Anfield l&agrave; đủ để trung vệ
+											người H&agrave; Lan c&oacute; vị tr&iacute; trong đội h&igrave;nh hay nhất
+											thập kỷ do France Football b&igrave;nh chọn.
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</div>
+			)
+		},
+		{
+			id: 19,
+			img: 'https://znews-photo.zadn.vn/w1024/Uploaded/pwivovlb/2020_01_04/pv_vu.jpg',
+			title: 'Phan Văn Anh Vũ khai ý đồ lập 5 công ty để thâu tóm đất ở Đà Nẵng',
+			cate: 'Pháp luật',
+			des:
+				'Bị cáo Vũ khai việc thành lập càng nhiều doanh nghiệp thì càng có lợi trong đầu tư các dự án và được vay vốn ngân hàng nhiều.',
+			date: '06/01/2019 08:00',
+			status: 0,
+			vip: 1,
+			view: 6800,
+			writer:'Vũ Lương',
+			content: (
+				<div>
+					<p>
+						S&aacute;ng 5/1, phi&ecirc;n t&ograve;a x&eacute;t xử 2 cựu Chủ tịch&nbsp;<a
+							class="topic location autolink"
+							title="Tin tức Đ&agrave; Nẵng"
+							href="https://news.zing.vn/tieu-diem/da-nang.html"
+						>
+							Đ&agrave; Nẵng
+						</a>&nbsp;v&agrave; c&aacute;c bị c&aacute;o li&ecirc;n quan vụ giao, chuyển nhượng đất đai
+						tr&aacute;i quy định cho&nbsp;<a
+							class="topic person autolink"
+							title="Tin tức Phan Văn Anh Vũ"
+							href="https://news.zing.vn/tieu-diem/phan-van-anh-vu.html"
+						>
+							Phan Văn Anh Vũ
+						</a>&nbsp;sang ng&agrave;y l&agrave;m việc thứ 4.
+					</p>
+					<p>
+						Luật sư Nguyễn Hữu Thế Trạch (b&agrave;o chữa cho bị c&aacute;o Phan Văn Anh Vũ) hỏi th&acirc;n
+						chủ về việc nhận chuyển nhượng nh&agrave; đất c&ocirc;ng sản v&agrave; dự &aacute;n bất động sản
+						ở TP Đ&agrave; Nẵng. Trong đ&oacute; c&oacute; dự &aacute;n 29 ha thuộc Khu đ&ocirc; thị mới
+						quốc tế Đa Phước.
+					</p>
+					<p>
+						Theo hồ sơ vụ &aacute;n, năm 2006, C&ocirc;ng ty TNHH Deawon (H&agrave;n Quốc) được UBND
+						Đ&agrave; Nẵng cho ph&eacute;p đầu tư v&agrave;o dự &aacute;n 29 ha tr&ecirc;n nguy&ecirc;n tắc
+						li&ecirc;n doanh với một c&ocirc;ng ty Việt Nam để tiến h&agrave;nh khai th&aacute;c. Sau
+						đ&oacute;, &ocirc;ng Trần Văn Minh (nguy&ecirc;n Chủ tịch TP Đ&agrave; Nẵng) chấp thuận để
+						C&ocirc;ng ty Daewon đầu tư v&agrave;o Khu đ&ocirc; thị mới Đa Phước theo hướng giao khu đất
+						x&acirc;y dựng nh&agrave; biệt thự, liền kề cho Phan Văn Anh Vũ để li&ecirc;n doanh với
+						C&ocirc;ng ty Daewon thực hiện dự &aacute;n.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w1024/Uploaded/pwivovlb/2020_01_04/pv_vu.jpg"
+										alt="Phan Van Anh Vu khai y do lap 5 cong ty de thau tom dat o Da Nang hinh anh 1 pv_vu.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Phan Văn Anh Vũ bị truy tố 2 tội danh. Ảnh:&nbsp;<em>TTXVN.</em>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						"Bằng c&aacute;ch n&agrave;o &ocirc;ng nhận được dự &aacute;n 29 ha n&agrave;y?", luật sư hỏi.
+						Vũ khai C&ocirc;ng ty cổ phần X&acirc;y dựng 79 (do bị c&aacute;o l&agrave;m Chủ tịch HĐQT) nhận
+						được dự &aacute;n 29 ha sau khi đối t&aacute;c l&agrave; C&ocirc;ng ty Deawon gửi văn bản cho
+						UBND Đ&agrave; Nẵng đề nghị cho li&ecirc;n doanh với doanh nghiệp của bị c&aacute;o.
+					</p>
+				</div>
+			)
 		}
 	]
 };

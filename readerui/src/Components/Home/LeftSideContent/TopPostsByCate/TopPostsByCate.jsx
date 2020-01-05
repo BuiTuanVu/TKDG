@@ -11,11 +11,13 @@ const { TabPane } = Tabs;
 class TopPostsByCate extends React.Component {
   render() {
     const { postsData } = this.props;
-    const data = postsData.sort((a, b) => {
-      return b.id - a.id;
-    });
-    const first = postsData[0];
-    const secondGroup = postsData.slice(1, 5);
+    const data = postsData
+      .filter(item => item.vip !== 1)
+      .sort((a, b) => {
+        return b.id - a.id;
+      });
+    const first = data[0];
+    const secondGroup = data.slice(1, 5);
     return (
       <Row gutter={20}>
         <Col span={24}>
@@ -60,7 +62,7 @@ class TopPostsByCate extends React.Component {
         </Col>
 
         <Col span={12} style={{ marginTop: 10 }}>
-          <Link>
+          <Link to={`/bycate/detail?post=${first.id}`}>
             <img
               src={first.img}
               style={{ objectFit: 'fill', width: '100%' }}
@@ -96,7 +98,7 @@ class TopPostsByCate extends React.Component {
             dataSource={secondGroup}
             renderItem={item => (
               <List.Item>
-                <Link>
+                <Link to={`/bycate/detail?post=${item.id}`}>
                   <div className="side-post">
                     <Row gutter={10}>
                       <Col span={8}>
@@ -106,7 +108,7 @@ class TopPostsByCate extends React.Component {
                           className="img-side-post"
                           height={100}
                           style={{ objectFit: 'fill', width: '100%' }}
-                        ></img>
+                        />
                       </Col>
                       <Col span={16}>
                         <div className="info-side-post">

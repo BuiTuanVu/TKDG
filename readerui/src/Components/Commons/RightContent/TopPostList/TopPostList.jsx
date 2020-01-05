@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import queryString from 'query-string';
 import './TopPostList.css';
 import 'antd/dist/antd.css';
 import { connect } from 'react-redux';
 import { Row, Col, Tabs, List, Typography, Icon } from 'antd';
 import rightside from '../../../../Assets/rightside01.png';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 const { TabPane } = Tabs;
 const { Text } = Typography;
 
@@ -18,12 +19,8 @@ class TopPostList extends Component {
       })
       .slice(0, 5);
     const dataViewest = data
-      .filter(item => item.vip !== 1)
       .sort(function(a, b) {
         return b.view - a.view;
-      })
-      .sort(function(a, b) {
-        return a.id - b.id;
       })
       .slice(0, 5);
     return (
@@ -35,7 +32,7 @@ class TopPostList extends Component {
               dataSource={dataNewest}
               renderItem={item => (
                 <List.Item>
-                  <Link>
+                  <Link to={`/bycate/detail?post=${item.id}`}>
                     <div className="side-post">
                       <Row gutter={10}>
                         <Col span={8}>
@@ -45,7 +42,7 @@ class TopPostList extends Component {
                             className="img-side-post"
                             height={100}
                             style={{ objectFit: 'fill', width: '100%' }}
-                          ></img>
+                          />
                         </Col>
                         <Col span={16}>
                           <div className="info-side-post">
@@ -71,7 +68,7 @@ class TopPostList extends Component {
               dataSource={dataViewest}
               renderItem={item => (
                 <List.Item>
-                  <Link>
+                  <Link to={`/bycate/detail?post=${item.id}`}>
                     <div className="side-post">
                       <Row gutter={10}>
                         <Col span={8}>
@@ -81,7 +78,7 @@ class TopPostList extends Component {
                             className="img-side-post"
                             height={90}
                             style={{ objectFit: 'fill', width: '100%' }}
-                          ></img>
+                          />
                         </Col>
                         <Col span={16}>
                           <div className="info-side-post">
@@ -113,4 +110,4 @@ const mapStateToProps = state => {
     isLogin: state.LoginReducer.isLogin
   };
 };
-export default connect(mapStateToProps)(TopPostList);
+export default withRouter(connect(mapStateToProps)(TopPostList));

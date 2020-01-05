@@ -37,7 +37,7 @@ class MultiPostList extends Component {
           dataSource={data}
           renderItem={item => (
             <List.Item>
-              <Link>
+              <Link to={`/bycate/detail?post=${item.id}`}>
                 <div className="side-post">
                   <Row gutter={10}>
                     <Col span={8}>

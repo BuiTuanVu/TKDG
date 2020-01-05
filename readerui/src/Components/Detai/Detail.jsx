@@ -1,18 +1,34 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css';
 
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Typography, Button, Icon, Breadcrumb, Tag } from 'antd';
-
+import queryString from 'query-string';
 import im01 from '../../Assets/detail01.png';
 import im02 from '../../Assets/detail02.png';
 import Comment from './Comment/Comment';
 import CommentForm from './Comment/Comment';
 import RelatedPostList from './RelatedPostList/RelatedPostList';
+import { connect } from 'react-redux';
 const { Text } = Typography;
 
 class Detail extends Component {
+  state = { id: 0, recPost: {} };
+  componentWillMount() {
+    const values = queryString.parse(this.props.location.search);
+    console.log(values); // "top"
+    console.log(values.post); // "im"
+    const { postsData } = this.props;
+    console.log('date', postsData);
+    const id = values.post;
+    console.log(id);
+    const recPost = postsData.filter(item => item.id === Number(id))[0];
+    this.setState({ recPost: recPost });
+    console.log(recPost);
+  }
   render() {
+    const { recPost } = this.state;
+
     const dataTag = [
       'Lý Hoàng Nam',
       'SEA Games 30',
@@ -31,48 +47,36 @@ class Detail extends Component {
           <Breadcrumb.Item>
             <Link to="/bycate">Thể thao</Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item>
-            Lý Hoàng Nam lần đầu tiên dành HCV tại SEA Games
-          </Breadcrumb.Item>
+          <Breadcrumb.Item>{recPost.title}</Breadcrumb.Item>
         </Breadcrumb>
 
         <div
           style={{ width: '100%', display: 'flex', flexDirection: 'column' }}
         >
           <Text strong style={{ fontSize: 20, color: 'black' }}>
-            Lý Hoàng Nam lần đầu tiên dành huy chương vàng môn quần vợt tại SEA
-            Games 30
+            {recPost.title}
           </Text>
 
-          <Text strong style={{ margin: '20px 0px' }}>
-            Vũ Bùi&ensp;<span>đăng lúc 10:00 | 07/12/2019</span>&nbsp;-&nbsp;SEA
-            Games 30
+          <Text style={{ margin: '20px 0px' }}>
+            <span style={{ fontWeight: 500, color: 'black' }}>
+              {recPost.writer}
+            </span>
+            &ensp;đăng lúc{' '}
+            <span style={{ fontWeight: 500, color: 'black' }}>
+              {recPost.date}
+            </span>
+            &nbsp;-&nbsp;
+            <span style={{ fontWeight: 'bold', color: 'orange' }}>
+              {recPost.cate}
+            </span>
           </Text>
-          <Text style={{ fontSize: 16 }}>
-            Trong trận chung kết đơn nam, Lý Hoàng Nam giành chiến thắng với tỷ
-            số 6-2, 6-4 trước đồng đội Daniel Cao Nguyễn, qua đó đem về tấm HCV
-            lịch sử cho quần vợt Việt Nam.
+          <Text
+            style={{ fontSize: 16, color: 'black', marginBottom: 10 }}
+            strong
+          >
+            {recPost.des}
           </Text>
-          <img
-            style={{ width: '100%', objectFit: 'fill', margin: '10px 0px' }}
-            src={im01}
-          ></img>
-
-          <Text style={{ fontSize: 16 }}>
-            Lúc 9h, Lý Hoàng Nam sẽ đối đầu với Daniel Nguyễn tại chung kết đơn
-            nam môn quần vợt. Cùng lúc đó trên sân bên cạnh, Savanna Lý Nguyễn
-            sẽ đối đầu với hạt giống số 2 người Indonesia ở chung kết đơn nữ.{' '}
-          </Text>
-          <img
-            style={{ width: '100%', objectFit: 'fill', margin: '10px 0px' }}
-            src={im02}
-          ></img>
-          <Text style={{ fontSize: 16 }}>
-            Trong trận chung kết đơn nam, Lý Hoàng Nam giành chiến thắng với tỷ
-            số 6-2, 6-4 trước đồng đội Daniel Cao Nguyễn, qua đó đem về tấm HCV
-            lịch sử cho quần vợt Việt Nam. Hai năm trước, Hoàng Nam chỉ có được
-            tấm HCĐ ở nôi dung này. Ảnh: Thuận Thắng.
-          </Text>
+          <div style={{ width: '100%' }}>{recPost.content}</div>
 
           <div
             style={{
@@ -116,4 +120,8 @@ class Detail extends Component {
     );
   }
 }
-export default Detail;
+
+const mapStateToProps = state => ({
+  postsData: state.PostReducer.postsData
+});
+export default connect(mapStateToProps, null)(withRouter(Detail));

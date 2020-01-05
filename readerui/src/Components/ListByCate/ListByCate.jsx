@@ -27,7 +27,7 @@ class ListByCate extends Component {
               </Breadcrumb>
               <OutstandingListByCate />
             </Route>
-            <Route exact path="/bycate/detail">
+            <Route path="/bycate/detail">
               <Detail />
             </Route>
           </Col>

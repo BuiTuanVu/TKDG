@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+p {
+  color: black;
+}
+.ant-typography {
+  color: rgb(17, 16, 16);
+}

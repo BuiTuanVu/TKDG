@@ -486,6 +486,7 @@ const dataPost = {
         'Một người phụ nữ ở bang Iowa, Mỹ gần đây đã may mắn tìm lại được chiếc xe nhờ vào Find My - tính năng giúp tìm iPhone, iPad, MacBook.',
       date: '04/01/2019 10:00 AM',
       status: 0,
+      vip: 0,
       writer: 'Minh Long',
       content: (
         <div>
@@ -625,7 +626,35 @@ const dataPost = {
          
         </div>
       )
-    }
+    },
+    {
+      id: 12,
+      img:
+        'https://znews-photo.zadn.vn/w480/Uploaded/neg_wpeczyr/2019_12_20/maxresdefault.jpg',
+      title: 'Gọi điện nhờ trợ giúp khi bị phạt 35 triệu đồng vì lỗi nồng độ cồn',
+      cate: 'Thời sự',
+      des:
+        'Tài xế T. không chịu ký vào biên bản xử lý với lý do "sức khỏe không tốt". Đồng thời, tài xế này còn gọi điện nhờ người trợ giúp.',
+      date: '05/01/2019 10:00',
+      status: 0,
+      writer: 'Minh Long',
+      content:(<div><p>Đội CSGT - Trật tự đ&ocirc; thị, C&ocirc;ng an TP Huế (Thừa Thi&ecirc;n - Huế) cho biết tối 4/1 đơn vị đ&atilde; xử phạt một trường hợp t&agrave;i xế &ocirc;t&ocirc; vi phạm vượt mức cao nhất trong khung xử phạt về nồng độ cồn theo quy định mới tại Nghị định 100/2019.</p>
+      <table class="picture" align="center">
+      <tbody>
+      <tr>
+      <td class="pic"><img src="https://znews-photo.zadn.vn/w660/Uploaded/pgi_qvradhnat/2020_01_05/bt.jpg" alt="Goi dien nho tro giup khi bi phat 35 trieu dong vi loi nong do con hinh anh 1 bt.jpg" /></td>
+      </tr>
+      <tr>
+      <td class="pCaption caption">
+      <p>T&agrave;i xế bị xử phạt nồng độ cồn. Ảnh:&nbsp;<em>L.C.</em></p>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+      <p>Theo đ&oacute;, khoảng 19h30 c&ugrave;ng ng&agrave;y, t&agrave;i xế l&agrave; T.T.B.T (29 tuổi, tr&uacute; ở TP Đ&ocirc;ng H&agrave; (Quảng Trị) điều khiển &ocirc;t&ocirc; lưu th&ocirc;ng tr&ecirc;n đường Đống Đa (TP Huế). L&uacute;c n&agrave;y, lực lượng CSGT ph&aacute;t hiện t&agrave;i xế c&oacute; nghi vấn n&ecirc;n y&ecirc;u cầu dừng xe kiểm tra.</p>
+      <p>Thời điểm kiểm tra, t&agrave;i xế T. c&oacute; nồng độ cồn l&ecirc;n tới 0,661mg/l&iacute;t kh&iacute; thở, vượt mức cao nhất trong khung xử phạt về vi phạm nồng độ cồn.</p>
+      <p>Theo quy định của Nghị định 100/2019, CSGT đ&atilde; lập bi&ecirc;n bản để xử phạt h&agrave;nh vi vi phạm của t&agrave;i xế T. với số tiền 35 triệu đồng. Đồng thời, t&agrave;i xế n&agrave;y c&ograve;n bị tước quyền sử dụng giấy ph&eacute;p l&aacute;i xe 23 th&aacute;ng.</p></div>)
+  }
   ]
 };
 

@@ -14,7 +14,7 @@ class OutstandingPosts extends React.Component {
     const data = postsData
       .filter(item => item.vip === 1)
       .sort(function(a, b) {
-        return a.id - b.id;
+        return b.id - a.id;
       });
 
     return (
@@ -27,7 +27,7 @@ class OutstandingPosts extends React.Component {
             height: 490
           }}
         >
-          <Link>
+          <Link to={`/bycate/detail?post=${data[0].id}`}>
             <img
               src={data[0].img}
               alt=""
@@ -52,7 +52,7 @@ class OutstandingPosts extends React.Component {
 
         {/* Two Right  Outstanding Post */}
         <Col span={8}>
-          <Link>
+          <Link to={`/bycate/detail?post=${data[1].id}`}>
             <div
               className="post"
               style={{
@@ -81,7 +81,7 @@ class OutstandingPosts extends React.Component {
               </div>
             </div>
           </Link>
-          <Link>
+          <Link to={`/bycate/detail?post=${data[2].id}`}>
             <div
               className="post"
               style={{
