@@ -12,7 +12,7 @@ class SideBarEditor extends React.Component {
 		return (
 			<Menu theme="dark" mode="inline" defaultSelectedKeys={[ '1' ]} style={{ height: '100%', borderRight: 0 }}>
 				<Menu.Item key="1">
-					<Link style={{ fontSize: 15 }} to="/admin/dashboard">
+					<Link style={{ fontSize: 15 }} to="/admin">
 						<Icon style={{ fontSize: 20 }} type="fund" />
 						Trang chủ
 					</Link>
