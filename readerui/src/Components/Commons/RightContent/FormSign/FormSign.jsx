@@ -17,7 +17,7 @@ class FormSign extends Component {
 					width: 'auto',
 					boxShadow: 'hsla(180, 90%, 15%, 0.25) 0px 1px 6px 0px',
 					padding: '10px 10px',
-					margin: '20px 10px'
+					margin: '30px 10px'
 				}}
 			>
 				<Icon type="mail" style={{ fontSize: 50 }} />

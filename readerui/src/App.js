@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { BackTop } from 'antd';
 import { BrowserRouter, Route, withRouter } from 'react-router-dom'
 import queryString from 'query-string'
 import Navbar from './Components/Commons/Navbar/Navbar';
@@ -22,6 +22,7 @@ class App extends React.Component {
 
     return (
       <BrowserRouter>
+        <BackTop />
         <Layout style={{ backgroundColor: 'white' }}>
           <Row>
             <Col span={3}></Col>

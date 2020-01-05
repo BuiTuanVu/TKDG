@@ -14,7 +14,7 @@ function info(data, date) {
           dataSource={data}
           renderItem={item => (
             <List.Item>
-              <Typography.Text mark>[10:00 AM]</Typography.Text> {item.content}
+              <Typography.Text mark>[10:00  ]</Typography.Text> {item.content}
             </List.Item>
           )}
         />

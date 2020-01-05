@@ -12,7 +12,7 @@ const dataPost = {
       cate: 'Thời sự',
       des:
         'Sập vũ trường King Night ở Vũng Tàu: 1 người chết, 6 người bị thương',
-      date: '02/01/2019 22:00 PM',
+      date: '02/01/2019 22:00 ',
       status: 0,
       writer: 'Minh Long'
     },
@@ -23,7 +23,7 @@ const dataPost = {
       cate: 'Thể thao',
       des:
         'Nguy cơ Đoàn Văn Hậu không được về khoác áo U-23 Việt Nam đá vòng chung kết U-23 châu Á',
-      date: '02/01/2019 22:00 PM',
+      date: '02/01/2019 22:00 ',
       status: 0,
       writer: 'Minh Long',
       content: (
@@ -113,7 +113,7 @@ const dataPost = {
       cate: 'Thể thao',
       des:
         'Sáng mai 5-1, tại Bình Phước sẽ diễn ra Giải việt dã leo núi toàn quốc Chinh phục đỉnh cao Bà Rá lần thứ 26-2020',
-      date: '02/01/2019 22:00 PM',
+      date: '02/01/2019 22:00 ',
       status: -1,
       writer: 'Bá Long'
     },
@@ -125,7 +125,7 @@ const dataPost = {
       cate: 'Thể thao',
       des:
         'Liverpool thắng dễ Sheffield 2-0 để nối dài mạch bất bại và tiếp tục bỏ xa 2 đối thủ cạnh tranh',
-      date: '02/01/2019 22:00 PM',
+      date: '02/01/2019 22:00 ',
       status: 1,
       writer: 'Vũ Long'
     },
@@ -137,7 +137,7 @@ const dataPost = {
       cate: 'Thể thao',
       des:
         'U23 thu được nhiều kết quả, nhưng HLV Park vẫn có những điều không hài lòng sau trận thua Bahrain ',
-      date: '03/01/2019 10:00 AM',
+      date: '03/01/2019 10:00  ',
       status: 0,
       writer: 'Vũ Long',
       content: (
@@ -214,7 +214,7 @@ const dataPost = {
       cate: 'Thời sự - Thường nhật',
       des:
         'Ngày 4/1, Cơ quan cảnh sát điều tra Công an tỉnh Bình Phước hoàn tất khám nghiệm hiện trường để điều tra cái chết của ông Vũ Anh Kiệt',
-      date: '03/01/2019 12:00 AM',
+      date: '03/01/2019 12:00  ',
       status: 0,
       writer: 'Vũ Long',
       content: (
@@ -266,7 +266,7 @@ const dataPost = {
       cate: 'Thời sự - Chính trị',
       des:
         'Tổng bí thư, Chủ tịch nước Nguyễn Phú Trọng đã chia sẻ những cảm xúc, suy ngẫm về những công việc mà toàn Đảng phấn đấu.',
-      date: '03/01/2019 14:00 AM',
+      date: '03/01/2019 14:00  ',
       status: 0,
       writer: 'Vũ Long',
       content: (
@@ -344,7 +344,7 @@ const dataPost = {
       cate: 'Công nghệ',
       des:
         'Theo nghị định mới, lỗi đeo tai nghe khi tham gia giao thông đã được tăng mức phạt lên nhiều lần.',
-      date: '03/01/2019 18:00 AM',
+      date: '03/01/2019 18:00  ',
       status: 0,
       writer: 'Vũ Long',
       content: (
@@ -412,7 +412,7 @@ const dataPost = {
       cate: 'Công nghệ',
       des:
         'Sau 2 năm ngừng hợp tác, Apple đang xem xét lại quyết định tiếp tục hợp tác với hãng từng cung cấp chip đồ họa Imagination.',
-      date: '03/01/2019 19:00 AM',
+      date: '03/01/2019 19:00  ',
       status: 0,
       writer: 'Vũ Long',
       content: (
@@ -484,7 +484,7 @@ const dataPost = {
       cate: 'Công nghệ',
       des:
         'Một người phụ nữ ở bang Iowa, Mỹ gần đây đã may mắn tìm lại được chiếc xe nhờ vào Find My - tính năng giúp tìm iPhone, iPad, MacBook.',
-      date: '04/01/2019 10:00 AM',
+      date: '04/01/2019 10:00  ',
       status: 0,
       vip: 0,
       writer: 'Minh Long',
@@ -547,7 +547,7 @@ const dataPost = {
       cate: 'Công nghệ',
       des:
         'Những mẫu Apple Watch Series 3 (bản GPS + Cellular) trở lên mới có thể dùng được eSIM tại Việt Nam.',
-      date: '04/01/2019 14:00 AM',
+      date: '04/01/2019 14:00  ',
       status: 0,
       writer: 'Minh Long',
       content: (

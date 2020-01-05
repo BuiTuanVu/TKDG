@@ -10,7 +10,7 @@ const dataPost = {
 			img: 'https://photo-2-baomoi.zadn.vn/w300_r3x2/2020_01_03_14_33536233/d75b8f0d6c4d8513dc5c.jpg',
 			cate: 'Thời sự',
 			des: 'Sập vũ trường King Night ở Vũng Tàu: 1 người chết, 6 người bị thương',
-			date: '02/01/2019 22:00 PM',
+			date: '02/01/2019 22:00 ',
 			status: 0,
 			vip: 0,
 			view: 40,
@@ -90,7 +90,7 @@ const dataPost = {
 			img: 'https://image.anninhthudo.vn/w700/uploaded/83/2020_01_04/hau.jpg',
 			cate: 'Thể thao',
 			des: 'Nguy cơ Đoàn Văn Hậu không được về khoác áo U-23 Việt Nam đá vòng chung kết U-23 châu Á',
-			date: '02/01/2019 22:00 PM',
+			date: '02/01/2019 22:00 ',
 			status: 0,
 			vip: 0,
 			view: 1000,
@@ -171,7 +171,7 @@ const dataPost = {
 			cate: 'Thể thao',
 			des:
 				'Sáng mai 5-1, tại Bình Phước sẽ diễn ra Giải việt dã leo núi toàn quốc Chinh phục đỉnh cao Bà Rá lần thứ 26-2020',
-			date: '02/01/2019 22:00 PM',
+			date: '02/01/2019 22:00 ',
 			status: 0,
 			vip: 0,
 			view: 420,
@@ -251,7 +251,7 @@ const dataPost = {
 			img: 'https://photo-2-baomoi.zadn.vn/w300_r3x2/2020_01_03_423_33536122/10c2219bc2db2b8572ca.jpg',
 			cate: 'Thể thao',
 			des: 'Liverpool thắng dễ Sheffield 2-0 để nối dài mạch bất bại và tiếp tục bỏ xa 2 đối thủ cạnh tranh',
-			date: '02/01/2019 22:00 PM',
+			date: '02/01/2019 22:00 ',
 			status: 0,
 			vip: 0,
 			view: 500,
@@ -331,7 +331,7 @@ const dataPost = {
 			title: 'Thầy Park gặp riêng hàng thủ sau trận thua Bahrain',
 			cate: 'Thể thao',
 			des: 'U23 thu được nhiều kết quả, nhưng HLV Park vẫn có những điều không hài lòng sau trận thua Bahrain ',
-			date: '03/01/2019 10:00 AM',
+			date: '03/01/2019 10:00  ',
 			status: 0,
 			vip: 0,
 			view: 120,
@@ -397,7 +397,7 @@ const dataPost = {
 			cate: 'Thời sự - Thường nhật',
 			des:
 				'Ngày 4/1, Cơ quan cảnh sát điều tra Công an tỉnh Bình Phước hoàn tất khám nghiệm hiện trường để điều tra cái chết của ông Vũ Anh Kiệt',
-			date: '03/01/2019 12:00 AM',
+			date: '03/01/2019 12:00  ',
 			status: 0,
 			vip: 0,
 			view: 3000,
@@ -444,7 +444,7 @@ const dataPost = {
 			cate: 'Thời sự - Chính trị',
 			des:
 				'Tổng bí thư, Chủ tịch nước Nguyễn Phú Trọng đã chia sẻ những cảm xúc, suy ngẫm về những công việc mà toàn Đảng, toàn dân và toàn quân ta đã và đang nỗ lực phấn đấu.',
-			date: '03/01/2019 14:00 AM',
+			date: '03/01/2019 14:00  ',
 			status: 0,
 			vip: 0,
 			view: 2000,
@@ -529,7 +529,7 @@ const dataPost = {
 			title: 'Tài xế Grab, Be méo mặt với mức phạt lỗi đeo tai nghe mới',
 			cate: 'Công nghệ',
 			des: 'Theo nghị định mới, lỗi đeo tai nghe khi tham gia giao thông đã được tăng mức phạt lên nhiều lần.',
-			date: '03/01/2019 18:00 AM',
+			date: '03/01/2019 18:00  ',
 			status: 0,
 			vip: 0,
 			view: 1030,
@@ -590,7 +590,7 @@ const dataPost = {
 			cate: 'Công nghệ',
 			des:
 				'Sau 2 năm ngừng hợp tác, Apple đang xem xét lại quyết định tiếp tục hợp tác với hãng từng cung cấp chip đồ họa Imagination.',
-			date: '03/01/2019 19:00 AM',
+			date: '03/01/2019 19:00  ',
 			status: 0,
 			vip: 0,
 			view: 5000,
@@ -657,7 +657,7 @@ const dataPost = {
 			cate: 'Công nghệ',
 			des:
 				'Một người phụ nữ ở bang Iowa, Mỹ gần đây đã may mắn tìm lại được chiếc xe nhờ vào Find My - tính năng giúp tìm iPhone, iPad, MacBook.',
-			date: '04/01/2019 10:00 AM',
+			date: '04/01/2019 10:00  ',
 			status: 0,
 			vip: 0,
 			view: 1002,
@@ -713,7 +713,7 @@ const dataPost = {
 			title: 'Mua Apple Watch nào rẻ nhất dùng được eSIM tại Việt Nam?',
 			cate: 'Công nghệ',
 			des: 'Những mẫu Apple Watch Series 3 (bản GPS + Cellular) trở lên mới có thể dùng được eSIM tại Việt Nam.',
-			date: '04/01/2019 14:00 AM',
+			date: '04/01/2019 14:00  ',
 			status: 0,
 			vip: 0,
 			view: 1060,
@@ -789,7 +789,7 @@ const dataPost = {
 			cate: 'Thời sự',
 			des:
 				'Tài xế T. không chịu ký vào biên bản xử lý với lý do "sức khỏe không tốt". Đồng thời, tài xế này còn gọi điện nhờ người trợ giúp.',
-			date: '05/01/2019 10:00',
+			date: '05/01/2019 10:00 ',
 			status: 0,
 			vip: 0,
 			view: 5860,
@@ -846,7 +846,7 @@ const dataPost = {
 			cate: 'Thời sự',
 			des:
 				'Cảnh sát kiểm tra quán karaoke Victory ở huyện Thăng Bình (Quảng Nam) và phát hiện hàng chục nam nữ đang phê ma túy.',
-			date: '05/01/2019 14:00',
+			date: '05/01/2019 14:00 ',
 			status: 0,
 			vip: 0,
 			view: 1060,
@@ -905,7 +905,7 @@ const dataPost = {
 			cate: 'Thời sự',
 			des:
 				'Từ Thái Lan trở về Huế tịnh dưỡng, sức khỏe của Thiền sư Thích Nhất Hạnh khá tốt. Theo ý nguyện của thiền sư, ông muốn sống tại chùa Từ Hiếu.',
-			date: '05/01/2019 16:00',
+			date: '05/01/2019 16:00 ',
 			status: 0,
 			vip: 0,
 			view: 1056,
@@ -969,16 +969,16 @@ const dataPost = {
 		},
 		{
 			id: 15,
-			img: 'https://znews-photo.zadn.vn/w480/Uploaded/pgi_qvradhnat/2020_01_05/ghb.jpg',
+			img: 'https://znews-photo.zadn.vn/w480/Uploaded/mdf_drokxr/2020_01_05/vanhau_thumb.jpg',
 			title: 'Báo Indonesia: Văn Hậu sẽ gặp nhiều khó khăn ở châu Âu',
 			cate: 'Thể thao',
 			des:
 				'Truyền thông Indonesia khẳng định những hậu vệ cánh Đông Nam Á sẽ gặp nhiều khó khăn để có vị trí chính thức ở các đội bóng châu Âu.',
-			date: '05/01/2019 16:30',
+			date: '05/01/2019 16:30 ',
 			status: 0,
 			vip: 1,
 			view: 6056,
-			writer:'Vũ Lương',
+			writer: 'Vũ Lương',
 			content: (
 				<div>
 					<p>
@@ -1041,11 +1041,11 @@ const dataPost = {
 			cate: 'Thể thao',
 			des:
 				'Hành trình đến World Cup 1990 của UAE có thể xem như câu chuyện cổ tích trong bóng đá và là niềm cảm hứng cho những đội bóng nhỏ.',
-			date: '05/01/2019 17:30',
+			date: '05/01/2019 17:30 ',
 			status: 0,
 			vip: 1,
 			view: 3056,
-			writer:'Vũ Lương',
+			writer: 'Vũ Lương',
 			content: (
 				<div>
 					<p>
@@ -1138,11 +1138,11 @@ const dataPost = {
 			cate: 'Thể thao',
 			des:
 				'MU chơi bế tắc và chấp nhận kết quả hòa 0-0 trước chủ nhà Wolves ở vòng 3 FA Cup diễn ra rạng sáng 5/1 (giờ Hà Nội).',
-			date: '05/01/2019 18:30',
+			date: '05/01/2019 18:30 ',
 			status: 0,
 			vip: 0,
 			view: 3059,
-			writer:'Vũ Bùi',
+			writer: 'Vũ Bùi',
 			content: (
 				<div>
 					<p>
@@ -1205,11 +1205,11 @@ const dataPost = {
 			title: 'Đội hình hay nhất thập kỷ qua gây tranh cãi',
 			cate: 'Thể thao',
 			des: 'Đội hình hay nhất thập niên thứ 2 của thế kỷ 21 do tạp chí France Football bình chọn.',
-			date: '05/01/2019 20:00',
+			date: '05/01/2019 20:00 ',
 			status: 0,
 			vip: 1,
 			view: 6000,
-			writer:'Vũ Lương',
+			writer: 'Vũ Lương',
 			content: (
 				<div>
 					<header class="the-article-header">
@@ -1228,7 +1228,7 @@ const dataPost = {
 											<img
 												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/12_squad.jpg"
 												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 1 12_squad.jpg"
-												style={{width: '100%'}}
+												style={{ width: '100%' }}
 											/>
 										</td>
 									</tr>
@@ -1238,10 +1238,10 @@ const dataPost = {
 								<tbody>
 									<tr>
 										<td class="pic">
-											<img style={{width: '100%'}}
+											<img
+												style={{ width: '100%' }}
 												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/01_casillas_zing.jpg"
 												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 2 01_casillas_zing.jpg"
-												
 											/>
 										</td>
 									</tr>
@@ -1263,7 +1263,7 @@ const dataPost = {
 											<img
 												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/02_lahm_zing.jpg"
 												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 3 02_lahm_zing.jpg"
-												style={{width: '100%'}}
+												style={{ width: '100%' }}
 											/>
 										</td>
 									</tr>
@@ -1289,7 +1289,7 @@ const dataPost = {
 											<img
 												src="https://znews-photo.zadn.vn/w1024/Uploaded/natmzz/2019_12_31/03_van_dijk_zing.jpg"
 												alt="Doi hinh hay nhat thap ky qua gay tranh cai hinh anh 4 03_van_dijk_zing.jpg"
-												style={{width: '100%'}}
+												style={{ width: '100%' }}
 											/>
 										</td>
 									</tr>
@@ -1317,11 +1317,11 @@ const dataPost = {
 			cate: 'Pháp luật',
 			des:
 				'Bị cáo Vũ khai việc thành lập càng nhiều doanh nghiệp thì càng có lợi trong đầu tư các dự án và được vay vốn ngân hàng nhiều.',
-			date: '06/01/2019 08:00',
+			date: '06/01/2019 08:00  ',
 			status: 0,
 			vip: 1,
 			view: 6800,
-			writer:'Vũ Lương',
+			writer: 'Vũ Lương',
 			content: (
 				<div>
 					<p>
@@ -1379,6 +1379,93 @@ const dataPost = {
 						Vũ khai C&ocirc;ng ty cổ phần X&acirc;y dựng 79 (do bị c&aacute;o l&agrave;m Chủ tịch HĐQT) nhận
 						được dự &aacute;n 29 ha sau khi đối t&aacute;c l&agrave; C&ocirc;ng ty Deawon gửi văn bản cho
 						UBND Đ&agrave; Nẵng đề nghị cho li&ecirc;n doanh với doanh nghiệp của bị c&aacute;o.
+					</p>
+				</div>
+			)
+		},
+		{
+			id: 20,
+			img: 'https://znews-photo.zadn.vn/w660/Uploaded/zdhwqwqd2/2020_01_05/2.jpg',
+			title: 'Quốc hội Iraq thông qua việc rút toàn bộ quân Mỹ khỏi nước này?',
+			cate: 'Thời sự',
+			des:
+				'Các nhà lập pháp tại Quốc hội Iraq hôm 5/1 đã bỏ phiếu quyết định Mỹ phải rút toàn bộ binh lính khỏi nước này.',
+			date: '07/01/2019 08:00  ',
+			status: 0,
+			vip: 1,
+			view: 9800,
+			writer: 'Vũ Lương',
+			content: (
+				<div>
+					<p>
+						Cuộc bỏ phiếu của 170 nh&agrave; lập ph&aacute;p nhằm th&ocirc;ng qua nghị quyết y&ecirc;u cầu
+						ch&iacute;nh phủ nước n&agrave;y hủy bỏ thỏa thuận an ninh với li&ecirc;n minh chống Nh&agrave;
+						nước Hồi gi&aacute;o (IS) tự xưng do&nbsp;<a
+							class="topic location autolink quickview"
+							href="https://news.zing.vn/tieu-diem/hop-chung-quoc-hoa-ky.html"
+						>
+							Mỹ
+						</a>&nbsp;dẫn đầu. D&ugrave; c&aacute;c nh&agrave; lập ph&aacute;p đ&atilde; th&ocirc;ng qua
+						nhưng kết quả n&agrave;y vẫn chưa phải l&agrave; &ldquo;ph&aacute;n quyết cuối
+						c&ugrave;ng&rdquo; đối với sự hiện diện của b&iacute;nh l&iacute;nh Mỹ tại Iraq cho tới khi Thủ
+						tướng Adel Abdul Mahdi k&yacute; th&agrave;nh luật.
+					</p>
+					<p>
+						Trước đ&oacute; Thủ tướng Mahdi n&oacute;i với Quốc hội rằng ch&iacute;nh phủ nước n&agrave;y
+						phải thiết lập lịch tr&igrave;nh r&uacute;t to&agrave;n bộ binh l&iacute;nh nước ngo&agrave;i
+						&ldquo;v&igrave; lợi &iacute;ch của chủ quyền quốc gia&rdquo;.
+					</p>
+					<p>
+						Kiến nghị của &ocirc;ng Mahdi được đưa ra h&ocirc;m 5/1, sau vụ kh&ocirc;ng k&iacute;ch của Mỹ
+						đ&atilde; ti&ecirc;u diệt tư lệnh lừng danh Qasem Soleimani, người đứng đầu lực lượng tinh nhuệ
+						Quds của Vệ binh C&aacute;ch mạnh&nbsp;<a
+							class="topic location autolink quickview"
+							href="https://news.zing.vn/tieu-diem/iran.html"
+						>
+							Iran
+						</a>, c&ugrave;ng một l&atilde;nh đạo chủ chốt kh&aacute;c của lực lượng d&acirc;n qu&acirc;n
+						Iraq do Iran chống lưng.
+					</p>
+					<p>
+						&ldquo;Việc xảy ra l&agrave; một vụ &aacute;m s&aacute;t ch&iacute;nh trị&rdquo;, &ocirc;ng
+						Mahdi n&oacute;i về vụ kh&ocirc;ng k&iacute;ch của Mỹ h&ocirc;m 3/1. &ldquo;Iraq kh&ocirc;ng thể
+						chấp nhận điều n&agrave;y&rdquo;.
+					</p>
+					<table class="picture" align="center">
+						<tbody>
+							<tr>
+								<td class="pic">
+									<img
+										src="https://znews-photo.zadn.vn/w660/Uploaded/pgi_dhbpgunat/2019_12_14/my.jpg"
+										alt="Quoc hoi Iraq thong qua viec rut toan bo quan My khoi nuoc nay hinh anh 1 my.jpg"
+									/>
+								</td>
+							</tr>
+							<tr>
+								<td class="pCaption caption">
+									<p>
+										Người ủng hộ tại lễ tang của tướng Qassem Soleimani ở th&agrave;nh phố Ahvaz,
+										Iran, ng&agrave;y 5/1. Ảnh:&nbsp;<em>AP.</em>
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						Thi thể của tư lệnh Soleimani đ&atilde; được đưa đến hai th&agrave;nh phố Najaf v&agrave;
+						Karbala của Iraq trước khi trở về Iran h&ocirc;m 5/1 để tiến h&agrave;nh ch&ocirc;n cất - dự
+						kiến diễn ra v&agrave;o ng&agrave;y 7/1 tại Kerman, qu&ecirc; hương của &ocirc;ng ở đ&ocirc;ng
+						nam Iran, truyền th&ocirc;ng nh&agrave; nước Iran đưa tin.
+					</p>
+					<p>
+						Theo&nbsp;<em>IRIB</em>, thi thể của tướng Soleimani được đưa đi bằng m&aacute;y bay tới
+						th&agrave;nh phố Ahvaz, ph&iacute;a t&acirc;y nam Iran v&agrave;o s&aacute;ng sớm 5/1,
+						v&agrave;i ng&agrave;y sau vụ kh&ocirc;ng k&iacute;ch bằng m&aacute;y bay kh&ocirc;ng người
+						l&aacute;i của Mỹ ở Iraq.
+					</p>
+					<p>
+						<em>IRIB</em>&nbsp;đăng tải video cho thấy chiếc quan t&agrave;i phủ cờ Iran được đưa ra khỏi
+						một chiếc m&aacute;y bay tr&ecirc;n nền qu&acirc;n nhạc.
 					</p>
 				</div>
 			)

@@ -1,0 +1,18 @@
+.btn-see-more {
+	display: inline-block;
+	padding: 0 15px 0 25px;
+	height: 46px;
+	background: #ff6a28;
+	position: relative;
+	font-family: SFD-Bold;
+	font-size: 20px;
+	text-transform: uppercase;
+	line-height: 46px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+}
