@@ -1,13 +1,24 @@
 import React from 'react';
 import 'antd/dist/antd.css';
 import './Header.css';
-import { Menu, Icon, Dropdown, Input, Row, Col, Button, Modal } from 'antd';
+import {
+  Menu,
+  Icon,
+  Dropdown,
+  Input,
+  Row,
+  Col,
+  Button,
+  Modal,
+  Typography
+} from 'antd';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import logo from '../../../Assets/logo.png';
+
 import Sign from '../../Sign/Sign';
 
 const { Search } = Input;
+const { Title, Text } = Typography;
 
 class HeaderCustom extends React.Component {
   state = { visible: false };
@@ -48,66 +59,14 @@ class HeaderCustom extends React.Component {
     return (
       <div>
         <div className="top-up">
-          <div className="second">
-            <Link to="#" className="link-custom">
-              Liên hệ
-            </Link>
-            <span>&ensp;|&ensp;</span>
-            <Link to="#" className="link-custom">
-              Quảng cáo
-            </Link>
-            <span>&ensp;|&ensp;</span>
-            <Link to="#" className="link-custom">
-              Gửi bài viết
-            </Link>
-            <span>&ensp;|&ensp;</span>
-            <Link to="/trade" className="link-custom">
-              Đổi quà
-            </Link>
-          </div>
-          <div style={{ position: 'absolute', right: 0 }}>
-            <span>Hồ Chí Minh, Thứ hai - 09/12/2019</span>
-          </div>
-        </div>
-        <Row className="header-custom">
-          {' '}
-          <Col
-            span={4}
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center'
-            }}
-          >
-            <Link className="logo" to="/home">
-              <img
-                src={logo}
-                style={{
-                  objectFit: 'fill',
-                  height: '40px',
-                  width: '100%'
-                }}
-              />
-            </Link>
-          </Col>
-          <Col
-            span={13}
+          <span>Hồ Chí Minh, Thứ hai - 09/12/2019</span>
+          <Search style={{ width: 300 }} placeholder="Tìm kiếm"></Search>
+          <div
             style={{
               display: 'flex',
               flexDirection: 'row',
-              justifyContent: 'center',
               alignItems: 'center'
             }}
-          >
-            <Search
-              placeholder="Nhập từ khóa tìm kiếm"
-              onSearch={value => console.log(value)}
-              style={{ width: '60%', height: 40 }}
-            />
-          </Col>
-          <Col
-            span={7}
-            style={{ float: 'right', textAlign: 'right', paddingRight: 10 }}
           >
             {this.props.isLogin ? (
               <Link style={{ fontSize: 16 }} to="/trade">
@@ -118,7 +77,7 @@ class HeaderCustom extends React.Component {
               <Button
                 type="link"
                 className="link-custom"
-                onClick={this.showModal}
+                onClick={e => this.setState({ visible: true })}
               >
                 {' '}
                 <Icon type="login" />
@@ -136,7 +95,7 @@ class HeaderCustom extends React.Component {
                   &ensp;
                   <Icon type="user" />
                   &ensp;
-                  {this.props.user}&ensp <Icon type="down" />
+                  {this.props.name}&ensp; <Icon type="down" />
                 </Link>
               </Dropdown>
             ) : (
@@ -150,28 +109,74 @@ class HeaderCustom extends React.Component {
                 Đăng ký
               </Button>
             )}
-
-            <Modal
-              visible={this.state.visible}
-              onCancel={this.handleCancel}
-              footer={null}
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                maxWidth: '350px'
-              }}
-            >
-              <Sign />
-            </Modal>
+          </div>
+        </div>
+        <Row className="header-custom">
+          {' '}
+          <Col
+            span={10}
+            style={{
+              display: 'flex',
+              flexDirection: 'column'
+            }}
+          >
+            <Link className="logo" to="/home">
+              <Text
+                level={1}
+                style={{ fontFamily: 'Tahoma', fontSize: 40, color: 'black' }}
+              >
+                TINMỚI<span style={{ color: 'red', fontWeight: 500 }}>247</span>
+                <span style={{ fontSize: 30, color: 'gray' }}>.com</span>
+              </Text>
+              <Text style={{ fontSize: 16 }}>
+                Tin tức tổng hợp mới nhất trong ngày
+              </Text>
+            </Link>
+          </Col>
+          <Col
+            span={14}
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center',
+              alignItems: 'center',
+              padding: '10px 0px'
+            }}
+          >
+            <Link>
+              <img
+                style={{
+                  objectPosition: 'center center',
+                  objectFit: 'fill',
+                  width: '100%',
+                  height: 100,
+                  maxHeight: 100
+                }}
+                src="https://khuyenmaihot247.com/wp-content/uploads/2018/12/shopee-khuyen-mai-tet-2019-1.jpg"
+                alt="coupon for weekend"
+              />
+            </Link>
           </Col>
         </Row>
+        <Modal
+          visible={this.state.visible}
+          onCancel={this.handleCancel}
+          footer={null}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center',
+            maxWidth: '350px'
+          }}
+        >
+          <Sign />
+        </Modal>
       </div>
     );
   }
 }
 const mapStateToProps = state => ({
-  user: state.demoApp.username,
-  isLogin: state.demoApp.isLogin
+  isLogin: state.LoginReducer.isLogin,
+  name: state.LoginReducer.username
 });
-export default connect(mapStateToProps)(HeaderCustom);
+export default connect(mapStateToProps, null)(HeaderCustom);

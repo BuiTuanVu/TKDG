@@ -3,21 +3,19 @@ import 'antd/dist/antd.css';
 import './TopPostsByCate.css';
 import { Link } from 'react-router-dom';
 import { Row, Col, List, Typography, Icon, Button, Tabs } from 'antd';
-
-import imgLeftTopCate from '../../../../Assets/01.png';
-import rightside02 from '../../../../Assets/rightside02.png';
+import { connect } from 'react-redux';
 
 const { Text } = Typography;
 const { TabPane } = Tabs;
 
 class TopPostsByCate extends React.Component {
   render() {
-    const data = [
-      'Đội tuyển U22 Việt Nam thắng thuyết phục U22 Thai Lan',
-      'Đào tạo nguồn nhân lực chất lượng cao là cấp thiết',
-      'Ông chủ Uniqlo coi Việt Nam là thị trường tiềm năng',
-      'Miền Bắc xuất hiện đợt không khí lạnh'
-    ];
+    const { postsData } = this.props;
+    const data = postsData.sort((a, b) => {
+      return b.id - a.id;
+    });
+    const first = postsData[0];
+    const secondGroup = postsData.slice(1, 5);
     return (
       <Row gutter={20}>
         <Col span={24}>
@@ -38,18 +36,22 @@ class TopPostsByCate extends React.Component {
             </Text>
             <div className="outstd-cate">
               {' '}
-              <Link to="#" className="outstd-cate__item">
+              <Link id="stt" to="#" className="outstd-cate__item">
                 Tất cả
               </Link>
+              <span>&ensp;|&ensp;</span>
               <Link to="#" className="outstd-cate__item">
                 Xã hội
               </Link>
+              <span>&ensp;|&ensp;</span>
               <Link to="#" className="outstd-cate__item">
                 SEA Games 30
               </Link>
+              <span>&ensp;|&ensp;</span>
               <Link to="#" className="outstd-cate__item">
                 Đời sống
               </Link>
+              <span>&ensp;|&ensp;</span>
               <Link to="#" className="outstd-cate__item">
                 Giải trí
               </Link>
@@ -58,72 +60,68 @@ class TopPostsByCate extends React.Component {
         </Col>
 
         <Col span={12} style={{ marginTop: 10 }}>
-          <img
-            src={imgLeftTopCate}
-            style={{ objectFit: 'fill', width: '100%' }}
-            alt="Bài viết đáng chú ý"
-          />
-          <div className="info-post-out">
-            <Text strong style={{ fontSize: 20 }}>
-              Tuyển tập lời chúc 20/11 hay và ý nghĩa nhất dành tặng cho thầy cô
-              giáo
-            </Text>
-            <Text style={{ fontSize: 15 }}>
-              <Icon type="clock-circle" />
-              &ensp; 06/12/2019
-              <span>&ensp;|&ensp;</span>
-              22:00
-            </Text>
+          <Link>
+            <img
+              src={first.img}
+              style={{ objectFit: 'fill', width: '100%' }}
+              alt="Bài viết đáng chú ý"
+            />
+            <div className="info-post-out">
+              <Text strong style={{ fontSize: 20 }}>
+                {first.title}
+              </Text>
+              <Text style={{ fontSize: 15 }}>
+                <Icon type="clock-circle" />
+                &ensp; {first.date}
+              </Text>
 
-            <Text style={{ fontSize: 18, marginTop: 10 }}>
-              Những lời chúc 20/11 là món quà tinh thần vô giá mà bạn có thể gửi
-              tới những người "lái đò" tôn kính.
-            </Text>
-          </div>
-          <Button
-            style={{
-              marginTop: 20,
-              backgroundColor: '#F5766D',
-              color: 'white',
-              fontSize: 16
-            }}
-          >
-            Đọc tiếp >>
-          </Button>
+              <Text style={{ fontSize: 18, marginTop: 10 }}>{first.des}</Text>
+            </div>
+            <Button
+              style={{
+                marginTop: 20,
+                backgroundColor: '#F5766D',
+                color: 'white',
+                fontSize: 16
+              }}
+            >
+              Đọc tiếp >>
+            </Button>
+          </Link>
         </Col>
         {/*  */}
         <Col span={12}>
           <List
             itemLayout="vertical"
-            dataSource={data}
+            dataSource={secondGroup}
             renderItem={item => (
               <List.Item>
-                <div className="side-post">
-                  <Row gutter={10}>
-                    <Col span={8}>
-                      {' '}
-                      <img
-                        src={rightside02}
-                        className="img-side-post"
-                        height={100}
-                        style={{ objectFit: 'fill', width: '100%' }}
-                      ></img>
-                    </Col>
-                    <Col span={16}>
-                      <div className="info-side-post">
-                        <Text strong style={{ fontSize: 18 }}>
-                          {item}
-                        </Text>
-                        <Text style={{ fontSize: 14 }}>
-                          <Icon type="clock-circle" />
-                          &ensp; 06/12/2019
-                          <span>&ensp;|&ensp;</span>
-                          22:00
-                        </Text>
-                      </div>
-                    </Col>
-                  </Row>
-                </div>
+                <Link>
+                  <div className="side-post">
+                    <Row gutter={10}>
+                      <Col span={8}>
+                        {' '}
+                        <img
+                          src={item.img}
+                          className="img-side-post"
+                          height={100}
+                          style={{ objectFit: 'fill', width: '100%' }}
+                        ></img>
+                      </Col>
+                      <Col span={16}>
+                        <div className="info-side-post">
+                          <Text strong style={{ fontSize: 18 }}>
+                            {item.title}
+                          </Text>
+                          <Text style={{ fontSize: 14 }}>
+                            <Icon type="clock-circle" />
+                            &ensp; {item.date}
+                          </Text>
+                        </div>
+                      </Col>
+                    </Row>
+                  </div>
+                </Link>
               </List.Item>
             )}
           />
@@ -132,4 +130,9 @@ class TopPostsByCate extends React.Component {
     );
   }
 }
-export default TopPostsByCate;
+
+const mapStateToProps = state => ({
+  postsData: state.PostReducer.postsData
+});
+
+export default connect(mapStateToProps, null)(TopPostsByCate);

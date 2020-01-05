@@ -5,7 +5,7 @@ import App from './App';
 
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from './Components/Sign/Login/LoginReducer';
+import rootReducer from './Components/rootReducer';
 
 import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker';

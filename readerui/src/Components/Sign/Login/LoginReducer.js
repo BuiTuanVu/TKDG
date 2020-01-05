@@ -1,11 +1,11 @@
 import { LOGIN } from './LoginAction.js'
-import { combineReducers } from 'redux';
+
 const init = {
-    username: '',
+    username: 'user01',
     isLogin: false
 }
 
-function demoApp(state = init, action) {
+function LoginReducer(state = init, action) {
     switch (action.type) {
         case LOGIN:
             return {
@@ -19,8 +19,4 @@ function demoApp(state = init, action) {
 
 }
 
-const rootReducer = combineReducers({
-    demoApp
-})
-
-export default rootReducer;
+export default LoginReducer;

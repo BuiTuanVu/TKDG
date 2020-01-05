@@ -4,15 +4,17 @@
 }
 .outstd-cate {
   margin-right: 0;
+  position: absolute;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
-  position: absolute;
+  align-items: center;
   right: 0;
 }
 
 .outstd-cate__item {
-  margin-left: 10px;
   color: black;
   font-size: 18px;
+}
+#stt {
+  color: cornflowerblue;
 }

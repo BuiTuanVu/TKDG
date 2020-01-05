@@ -24,7 +24,7 @@ class App extends React.PureComponent {
     const { postsData } = this.props;
     const dataPending = postsData.filter((item) => item.status === 0).sort(function (a, b) {
       return b.id - a.id;
-    });;
+    });
     const dataAccepted = postsData.filter((item) => item.status === 1);
     const dataRejected = postsData.filter((item) => item.status === -1);
     return (
