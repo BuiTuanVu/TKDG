@@ -5,17 +5,33 @@ import { List, Card, Typography, Tag, Select, Button, Icon, Form, Input, Row, Co
 
 import { connect } from 'react-redux';
 import TextArea from 'antd/lib/input/TextArea';
-import { Link, Redirect } from 'react-router-dom';
+import { Link, Redirect, withRouter } from 'react-router-dom';
 
 const { Countdown } = Statistic;
 const { Text, Title } = Typography;
 const { Meta } = Card;
 const { Option } = Select;
-
+const { confirm } = Modal;
 const deadline = (id) => {
-	return Date.now() + 1000 * 60 * id;
+	var value = 0;
+	id === 12 ? (value = Date.now() + 1000 * 1 * id) : (value = Date.now() + 1000 * 100 * id);
+	return value;
 };
-
+function showDeleteConfirm(item) {
+	confirm({
+		title: 'Bạn thực sự muốn gỡ bài viết?',
+		content: `${item.title}`,
+		okText: 'Có',
+		okType: 'danger',
+		cancelText: 'Không',
+		onOk() {
+			console.log('OK');
+		},
+		onCancel() {
+			console.log('Cancel');
+		}
+	});
+}
 function warning(id) {
 	Modal.warning({
 		title: 'Thông báo bài viết chờ duyệt',
@@ -28,7 +44,9 @@ class ListPost extends Component {
 		visibleReject: false,
 		isOutStd: false,
 		visiblePreview: false,
-		id: 0
+		visibleComment: false,
+		id: 0,
+		redirectToEdit: false
 	};
 
 	onFinish = (id) => {
@@ -40,6 +58,12 @@ class ListPost extends Component {
 	showModalPreview = (id) => {
 		this.setState({
 			visiblePreview: true,
+			id: id
+		});
+	};
+	showModalComment = (id) => {
+		this.setState({
+			visibleComment: true,
 			id: id
 		});
 	};
@@ -89,9 +113,13 @@ class ListPost extends Component {
 	render() {
 		const { data, tit, username, status } = this.props;
 
-		const { isOutStd, id } = this.state;
+		const { isOutStd, id, redirectToEdit } = this.state;
 		const recentItem = data.filter((item) => item.id === this.state.id)[0];
 		console.log('dqwdqwdqd', recentItem);
+
+		if (redirectToEdit) {
+			return <Redirect to="/admin/create-post" />;
+		}
 		return (
 			<div>
 				{' '}
@@ -132,7 +160,7 @@ class ListPost extends Component {
 							<Select
 								showSearch
 								style={{ width: 200, margin: '0px 15px' }}
-								placeholder="Chọn cách sắp xếp"
+								placeholder="Chọn thời gian chờ"
 								optionFilterProp="children"
 								filterOption={(input, option) =>
 									option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}
@@ -158,7 +186,6 @@ class ListPost extends Component {
 									{status === 0 ? (
 										//Post is pending
 										<Card
-											onClick={(e) => this.showModalPreview(item.id)}
 											style={{
 												position: 'relative',
 												display: 'flex',
@@ -208,7 +235,7 @@ class ListPost extends Component {
 											</div>
 											<div style={{ marginTop: 10 }}>
 												<Text>
-													<span style={{ color: 'peru', fontWeight: 'bold' }}>
+													<span style={{ color: 'peru', fontWeight: 500 }}>
 														{item.cate}{' '}
 													</span>| {item.date}
 												</Text>
@@ -235,10 +262,16 @@ class ListPost extends Component {
 														justifyContent: 'space-between'
 													}}
 												>
-													<Button icon="edit" type="primary">
-														Sửa bài
-													</Button>
-													<Button icon="delete" type="danger">
+													<Link to="/admin/create-post" style={{ color: 'white' }}>
+														<Button icon="edit" type="primary">
+															Sửa bài
+														</Button>
+													</Link>
+													<Button
+														icon="delete"
+														type="danger"
+														onClick={(e) => showDeleteConfirm(item)}
+													>
 														Gỡ bài
 													</Button>
 												</div>
@@ -254,7 +287,13 @@ class ListPost extends Component {
 														justifyContent: 'space-between'
 													}}
 												>
-													<Button icon="eye" type="primary" ghost style={{ width: '100%' }}>
+													<Button
+														icon="eye"
+														type="primary"
+														ghost
+														style={{ width: '100%' }}
+														onClick={(e) => this.showModalPreview(item.id)}
+													>
 														Duyệt bài viết
 													</Button>
 												</div>
@@ -286,7 +325,9 @@ class ListPost extends Component {
 											</div>
 											<div style={{ marginTop: 10 }}>
 												<Text>
-													<span style={{ color: 'orange' }}>{item.cate} </span>| {item.date}
+													<span style={{ color: 'orange', fontWeight: 500 }}>
+														{item.cate}{' '}
+													</span>| {item.date}
 												</Text>
 											</div>
 											<div style={{ position: 'absolute', top: 5, left: 5 }}>
@@ -311,8 +352,14 @@ class ListPost extends Component {
 														justifyContent: 'space-between'
 													}}
 												>
-													<Button icon="eye" type="primary" ghost style={{ width: '100%' }}>
-														Duyệt bài viết
+													<Button
+														icon="eye"
+														type="danger"
+														ghost
+														style={{ width: '100%' }}
+														onClick={(e) => this.showModalComment(item.id)}
+													>
+														Xem nhận xét bài viết
 													</Button>
 												</div>
 											) : (
@@ -422,7 +469,7 @@ class ListPost extends Component {
 											<Input readOnly value={id === 0 ? '' : recentItem.title} />
 										</Form.Item>
 										<Form.Item label="Nội dung tóm tắt bài viết">
-											<Input readOnly value={id === 0 ? '' : recentItem.id} />
+											<Input readOnly value={id === 0 ? '' : recentItem.des} />
 										</Form.Item>
 										<Row gutter={20}>
 											<Col span={12}>
@@ -432,6 +479,47 @@ class ListPost extends Component {
 											</Col>
 											<Col span={12}>
 												<Form.Item label="Thời gian tạo">
+													<Input readOnly value={id === 0 ? '' : recentItem.date} />
+												</Form.Item>
+											</Col>
+										</Row>
+
+										<Form.Item label="Lời nhận xét">
+											<TextArea
+												cols={2}
+												autoFocus
+												placeholder="Nhập lời nhận xét về bài viết"
+												value={'Bài viết tiêu đề sai, chưa phản ánh đúng nội dung bài viết'}
+											/>
+										</Form.Item>
+									</Form>
+								</Modal>
+								<Modal
+									style={{ top: 20 }}
+									title="Nhận xét bài viết"
+									visible={this.state.visibleComment}
+									onOk={(e) => {
+										this.setState({ visibleComment: false, redirectToEdit: true });
+									}}
+									onCancel={(e) => this.setState({ visibleComment: false })}
+									okText="Sửa bài viết"
+									cancelText="Quay lại"
+								>
+									<Form layout="vertical">
+										<Form.Item label="Tiêu đề bài viết">
+											<Input readOnly value={id === 0 ? '' : recentItem.title} />
+										</Form.Item>
+										<Form.Item label="Nội dung tóm tắt bài viết">
+											<Input readOnly value={id === 0 ? '' : recentItem.des} />
+										</Form.Item>
+										<Row gutter={20}>
+											<Col span={12}>
+												<Form.Item label="Biên tập viên phụ trách">
+													<Input readOnly value={id === 0 ? '' : recentItem.writer} />
+												</Form.Item>
+											</Col>
+											<Col span={12}>
+												<Form.Item label="Thời gian nhận xét">
 													<Input readOnly value={id === 0 ? '' : recentItem.date} />
 												</Form.Item>
 											</Col>
@@ -504,7 +592,7 @@ class ListPost extends Component {
 											icon="close"
 											type="danger"
 											style={{ marginRight: 20 }}
-											onClick={(e) => this.showModalReject(item.id)}
+											onClick={(e) => this.showModalReject(recentItem.id)}
 										>
 											Từ chối
 										</Button>
@@ -512,7 +600,7 @@ class ListPost extends Component {
 											icon="check"
 											style={{ marginRight: 20 }}
 											type="primary"
-											onClick={(e) => this.showModalAccept(item.id)}
+											onClick={(e) => this.showModalAccept(recentItem.id)}
 										>
 											Duyệt bài
 										</Button>
@@ -531,4 +619,4 @@ const mapStateToProps = (state) => ({
 	isLogin: state.LoginReducer.isLogin,
 	username: state.LoginReducer.username
 });
-export default connect(mapStateToProps, null)(ListPost);
+export default connect(mapStateToProps, null)(withRouter(ListPost));

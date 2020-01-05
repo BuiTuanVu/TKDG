@@ -32,6 +32,7 @@ class NavBar extends React.Component {
 			<Header className="header">
 				<div>
 					<HeaderSearch
+						open={true}
 						placeholder="Nhập từ khóa tìm kiếm"
 						dataSource={[ '1', '2', '3' ]}
 						onSearch={(value) => {

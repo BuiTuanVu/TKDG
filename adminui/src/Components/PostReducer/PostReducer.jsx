@@ -630,7 +630,7 @@ const dataPost = {
     {
       id: 12,
       img:
-        'https://znews-photo.zadn.vn/w480/Uploaded/neg_wpeczyr/2019_12_20/maxresdefault.jpg',
+        'https://znews-photo.zadn.vn/w480/Uploaded/pgi_qvradhnat/2020_01_05/ny.jpg',
       title: 'Gọi điện nhờ trợ giúp khi bị phạt 35 triệu đồng vì lỗi nồng độ cồn',
       cate: 'Thời sự',
       des:
