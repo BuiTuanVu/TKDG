@@ -21,8 +21,9 @@ class RelatedPostList extends Component {
             width: '100%',
             borderLeft: '2px solid #DD3535',
             borderBottom: '1px solid #e0e0e0',
-            padding: '0px 0px 0px 10px',
-            margin: '30px 20px 10px 0px',
+            padding: '0px 0px 10px 10px',
+            margin: '30px 20px 50px 0px',
+
             display: 'flex',
             flexDirection: 'row',
             position: 'relative'
@@ -33,7 +34,7 @@ class RelatedPostList extends Component {
           </Text>
           <TranferButton />
         </div>
-        <Row gutter={[20]}>
+        <Row gutter={[20]} style={{ marginBottom: 30 }}>
           {data.map(item => (
             <Col span={8}>
               <Link to="/bycate/detail">

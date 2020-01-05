@@ -1,38 +1,12 @@
 import React, { Component } from 'react';
 
 import 'antd/dist/antd.css';
-import bycate03 from '../../../Assets/bycate03.png';
 import { Row, Col, Typography, List, Icon } from 'antd';
 
 const { Text } = Typography;
 class SecondListByCate extends Component {
   render() {
-    const data = [
-      {
-        title:
-          'Đoàn Việt Nam tụt xuống vị trí thứ 3 dù giành 7 HCV trong ngày 6/12',
-        des:
-          'Trưởng đoàn Nguyễn Tiến Cường là mội trong những người đi tiên phong trong phong trào bóng rổ chuyên nghiệp tại Việt Nam. '
-      },
-      {
-        title:
-          'Đoàn Việt Nam tụt xuống vị trí thứ 3 dù giành 7 HCV trong ngày 6/12',
-        des:
-          'Trong ngày 6/12, Đoàn Việt Nam giành được 7 HCV đến từ các môn quần vợt, bơi, đấu kiếm, canoeing và xe đạp qua đó giành được 38 HCV 41 HCB và 52 HCĐ, xếp thứ 3 BXH.'
-      },
-      {
-        title:
-          'Trưởng đoàn Nguyễn Tiến Cường tự hào về chiến thắng lịch sử của đội tuyển Bóng rổ Việt Nam tại Sea Game 30',
-        des:
-          'Là mội trong những người đi tiên phong trong phong trào bóng rổ chuyên nghiệp tại Việt Nam, trưởng đoàn Nguyễn Cường đã có những phát biểu khen ngợi đội tuyển Việt Nam. '
-      },
-      {
-        title:
-          'CĐV Thai lan không hài lòng vì thua Việt Nam trong trận đấu tại SEA Games 30',
-        des:
-          'CĐV Thai lan không hài lòng vì thua Việt Nam trong trận đấu tại SEA Games 30 ngày 06/12/2019 tại khuôn khổ vòng bán kết môn bóng đá nam U22'
-      }
-    ];
+    const data = this.props.data;
     return (
       <div>
         <div
@@ -61,7 +35,7 @@ class SecondListByCate extends Component {
                   <Col span={8}>
                     {' '}
                     <img
-                      src={bycate03}
+                      src={item.img}
                       className="img-side-post"
                       height={160}
                       style={{ objectFit: 'fill', width: '100%' }}
@@ -74,9 +48,7 @@ class SecondListByCate extends Component {
                       </Text>
                       <Text style={{ fontSize: 16 }}>
                         <Icon type="clock-circle" />
-                        &ensp; 06/12/2019
-                        <span>&ensp;|&ensp;</span>
-                        22:00
+                        &ensp; {item.date}
                       </Text>
                       <Text style={{ marginTop: 10, fontSize: 16 }}>
                         {item.des}

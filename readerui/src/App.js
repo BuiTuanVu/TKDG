@@ -23,6 +23,7 @@ function App() {
           <Col span={18}>
             <Layout style={{ backgroundColor: 'white' }}>
               <HeaderCustom />
+              <Route path="/trade"><TradeCoin /></Route>
               <Header style={{ padding: '0', height: '50px', lineHeight: 50 }} >
                 <Navbar />
               </Header>
@@ -31,7 +32,7 @@ function App() {
                 <Route exact path="/"><Home /></Route>
                 <Route path="/home"><Home /></Route>
                 <Route path="/bycate"><ListByCate /></Route>
-                <Route path="/trade"><TradeCoin /></Route>
+
 
               </Content>
 

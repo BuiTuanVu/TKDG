@@ -13,7 +13,7 @@ const { Meta } = Card;
 const { Option } = Select;
 
 const deadline = (id) => {
-	return Date.now() + 1000 * 10 * id;
+	return Date.now() + 1000 * 60 * id;
 };
 
 function warning(id) {
@@ -156,14 +156,14 @@ class ListPost extends Component {
 							<div>
 								<List.Item>
 									{status === 0 ? (
-										//Card for editor
+										//Post is pending
 										<Card
 											onClick={(e) => this.showModalPreview(item.id)}
 											style={{
 												position: 'relative',
 												display: 'flex',
 												flexDirection: 'column',
-												minHeight: 380,
+												minHeight: 450,
 												boxShadow: 'hsla(189, 14%, 30%, 0.35) 0px 1px 6px 0px'
 											}}
 											hoverable
@@ -201,6 +201,11 @@ class ListPost extends Component {
 											<div>
 												<Text style={{ fontSize: 18 }} strong>
 													{item.title}
+												</Text>
+											</div>
+											<div>
+												<Text style={{ fontSize: 14 }}>
+													{item.des}
 												</Text>
 											</div>
 											<div style={{ marginTop: 10 }}>
@@ -258,12 +263,12 @@ class ListPost extends Component {
 											)}
 										</Card>
 									) : (
-										//Not editor
+										//Post # pending 
 										<Card
 											style={{
 												display: 'flex',
 												flexDirection: 'column',
-												minHeight: 400,
+												minHeight: 450,
 												boxShadow: 'hsla(189, 14%, 30%, 0.35) 0px 1px 6px 0px'
 											}}
 											hoverable
@@ -295,7 +300,22 @@ class ListPost extends Component {
 												) : (
 													<Tag color="#108ee9">Đang chờ</Tag>
 												)}
-											</div>
+												</div>
+												{status === -1 && username === 'writer' ? <div
+													style={{
+														position: 'absolute',
+														bottom: 10,
+														left: 15,
+														right: 15,
+														display: 'flex',
+														flexDirection: 'row',
+														justifyContent: 'space-between'
+													}}
+												>
+													<Button icon="eye" type="primary" ghost style={{ width: '100%' }}>
+														Duyệt bài viết
+													</Button>
+												</div> : <div></div>}
 										</Card>
 									)}
 								</List.Item>
@@ -435,8 +455,8 @@ class ListPost extends Component {
 										</span>{' '}
 										| {id === 0 ? '' : recentItem.date}
 									</p>
-									<p>{item.des}</p>
-									<div style={{ width: 'auto' }}>{id === 0 ? '' : recentItem.content}</div>
+									<p>{id === 0 ? '' : recentItem.des}</p>
+									<div style={{ width: 'auto' }}>{id === 0 ? <div>Nội dung chưa có</div> : recentItem.content}</div>
 									<div style={{ marginTop: 20, paddingBottom: 30 }}>
 										<span>
 											<Icon type="tags" />&ensp;Từ khóa:&ensp;

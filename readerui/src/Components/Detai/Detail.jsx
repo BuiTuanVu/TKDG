@@ -22,7 +22,12 @@ class Detail extends Component {
     return (
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         <Breadcrumb style={{ margin: '20px 0px' }}>
-          <Breadcrumb.Item>Trang chủ</Breadcrumb.Item>
+          <Breadcrumb.Item>
+            {' '}
+            <Link to="/home">
+              <Icon type="home"></Icon>&ensp;Trang chủ
+            </Link>
+          </Breadcrumb.Item>
           <Breadcrumb.Item>
             <Link to="/bycate">Thể thao</Link>
           </Breadcrumb.Item>
